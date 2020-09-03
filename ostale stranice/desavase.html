@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEŠAVA SE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsiv.css">
+</head>
+<body>
+<div class="kontejner">
+<section class="margina" id="desavase">
+    <main>
+        <h2>DEŠAVA SE</h2>
+                <a id="nazad" href="../index.html"> <-- </a>
+        <audio controls>
+            <!-- <source src="horse.ogg" type="audio/ogg"> -->
+            <source src="../snimci/dogadjase.m4a" type="audio/mpeg"> Your browser does not support the audio element
+        </audio>
+        <aside class="izvor"><p>Recital sa koncerta D. Stojnića u Beogradu 2001.</p></aside>
+        <div><p>Mišljenja sam da se sa više dece izbegavaju ovakve i slične situacije - dete je pošteđeno pretererane
+           brige roditelja, nesputanije grabi kroz život, brže sazreva i osamostaljuje se, a roditelji opuštenije 
+           doživljavaju roditeljstvo, jednom rečju: svi još više uživaju. 
+        </p>
+        <div class="prazan-prostor">&nbsp;</div>
+        <p>I na kraju, još jednom, najvažnije je:</p>
+        <ul>
+            <li><span>Da se molite Bogu;</span></li>
+            <li><span>Da formirate i sačuvate porodicu</span> (bolje sa više dece);</li>
+            <li><span>Da istrajavate </span>(setite se: penjati se može samo uz strminu, a bez problema  se ide nizbrdo).</li> 
+        </ul>
+        <p>Bog vas blagoslovio!</p></div>
+    </main> 
+            <!-- <div class="prazan-prostor">&nbsp;</div> -->
+        <nav>            <!-- PROVERI STA TREBA UPISATI U ACTION - NPR MEJL -->
+            <form action="" method="POST">
+                <label id="tekstIme" for="ime">Unesi ime i prezime:</label>>
+                <input onchange="restartForme()" maxlength="30" type="text" name="ime" id="ime">
+                <label id="tekstEmail" for="email">Unesi e-mail adresu:</label>
+                <input onchange="restartForme()" maxlength="25" type="email" name="email" id="email">
+                <textarea onchange="restartForme()" id="misljenje" placeholder="Ukoliko želiš, registruj se gore, pa mi ovde upiši i pošalji Tvoje mišljenje ili komentar o večnoj dilemi: 
+Kojim putem? 
+H V A L A!" name="misljenje" cols="20" rows="20" maxlength="400"></textarea>
+                <button   id="posalji" onclick="potvrda()" type="button" >POŠALJI</button>
+            </form>
+        </nav>
+    <footer><p> Zahvaljujem se G. Šović Marku na prenesenom znanju iz oblasti Web programairanja
+            i dizajna, zahvaljujući kome sam uspela da iznjedrim svoju priču uz pomoć moderne tehnologije.</p></footer>
+    <footer><p>Rad posvećujem sinu, snajki, i unuku, čije rođenje je bilo
+            inicijalna kapisla za odluku da tema, mog prvog sajta, bude baš ova.</p></footer>
+    <footer><p>Autor: Đurđina Andrić, avgust 2020.</p></footer>
+    </div>
+</section>
+</body>
+<script src="script.js"></script>
+</html>
