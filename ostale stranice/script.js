@@ -18,13 +18,13 @@ function Vreme() {{
     }
 
 
-const portfolioStavke = document.querySelectorAll('.portfolio-stavka')
-        portfolioStavke.forEach(portfolioStavka => {
-    portfolioStavka.addEventListener('mouseover', () => {
-        portfolioStavka.childNodes[1].classList.add('slike-zatamljene');
+const galerijaSlike = document.querySelectorAll('.galerija-slika')
+        galerijaSlike.forEach(galerijaSlika => {
+    galerijaSlika.addEventListener('mouseover', () => {
+        galerijaSlika.childNodes[1].classList.add('slike-zatamljene');
     })
-             portfolioStavka.addEventListener('mouseout', () => {
-    portfolioStavka.childNodes[1].classList.remove('slike-zatamljene');
+             galerijaSlika.addEventListener('mouseout', () => {
+    galerijaSlika.childNodes[1].classList.remove('slike-zatamljene');
             })
 });
 
@@ -103,6 +103,20 @@ function restartForme() {
     misljenje.style.backgroundColor = "rgba(250, 250, 250, 0.990)";
 }
 
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
 
+
+const meniIkona = document.querySelector('.meni-ikona');
+function toggleMeniIkona() {
+    meniIkona.classList.toggle('active')
+}
+meniIkona.addEventListener('click', toggleMeniIkona);
 
 

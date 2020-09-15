@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SAVET MLADIMA</title>
+    <title>M L A D I M A</title>
     <meta name="language" content="Serbian, Srpski">
     <meta name="description" content="Dat savet mladima za večitu dilemu: Kojim putem?">
     <meta name="keywords" content="savet, mladi, put, radost, sreća">
@@ -16,17 +16,21 @@
         <main>    
             <h1>SAVET MLADIMA</h1> <br>
             <h2>Kojim putem?</h2>
-            <img id="hamburger" src="slike/hamburger.png" alt="navigacija">
+            <button type="button" id="hamburger"><div class="meni-ikona">
+                <span class="linija-1"></span>
+                <span class="linija-2"></span>
+                <span class="linija-3"></span>
+            </div></button>
         </main>
-            <nav>
-            <ul>
-                <li ><a href="#home">POČETNA</a></li>
+            <nav class="meni" >
+            <ul >
+                <li><a href="#home">POČETNA</a></li>
                 <li><a href="#o-meni">O MENI</li>
                 <li><a href="#savet">SAVET</a></li>
                 <li><a href="#put-radosti"><button>PUT RADOSTI<br> I SREĆE </button></a></li>
                 <li><a href="#za-laku-noc">ZA LAKU NOĆ</a></li>
                 <li><a href="#neko-nauci">NEKO NAUČI</a></li>
-                <li class="active-nav"><a href="ostale stranice/desavase.html">DEŠAVA SE</a></li>
+                <li><a href="ostale stranice/desavase.html">DEŠAVA SE</a></li>
             </ul>
             </nav>
     </section>        
@@ -71,29 +75,29 @@
     </section>
     <section class="margina" id="put-radosti">
         <h2>PUT RADOSTI I SREĆE</h2>
-        <div onclick="y()"" class="portfolio-stavke">
-            <div  class="portfolio-stavka">
+        <div onclick="y()"" class="galerija-slike">
+            <div  class="galerija-slika">
                 <div class="slika-pozadina" style="background-image: url(slike/vencanje.jpg);"></div>
                 <div class="tekst-na-slici">&nbsp;&nbsp;&nbsp;&nbsp; Venčanje</div>
             </div>   
-            <div class="portfolio-stavka">
+            <div class="galerija-slika">
                 <div class="slika-pozadina" style="background-image: url(slike/trudnoca.jpg);"></div>
                 <div class="tekst-na-slici">&nbsp;&nbsp;&nbsp;&nbsp; Trudnoća</div>    
             </div>
-            <div class="portfolio-stavka">
+            <div class="galerija-slika">
                 <div class="slika-pozadina" style="background-image: url(slike/nestasko.jpg);"> </div>
                 <div class="tekst-na-slici">&nbsp;&nbsp;&nbsp; Lepotica<br>&nbsp;&nbsp;&nbsp; il'<br>&nbsp;&nbsp;&nbsp; nestaško?</div>
             </div>
-            <div class="portfolio-stavka">
+            <div class="galerija-slika">
                 <div class="slika-pozadina" style="background-image: url(slike/radost.jpg);"></div>
                 <div class="tekst-na-slici">NEMA PRAVE RADOSTI BEZ DECE!</div> 
             </div>
-            <div class="portfolio-stavka">
+            <div class="galerija-slika">
                 <div class="slika-pozadina" style="background-image: url(slike/odlazak.jpg);"></div>
                 <div class="tekst-na-slici">I doći će vreme da krenu u svoj život, a vi da postanete baka i deka.</div>
             </div>
-            <div class="portfolio-stavka">
-                <div class="slika-pozadina" style="background-image: url(slike/starost.png);"> </div>
+            <div class="galerija-slika">
+                <div class="slika-pozadina" style="background-image: url(slike/starost.jpg);"> </div>
                 <div class="tekst-na-slici">STAROST JE RUŽNA I TUŽNA BEZ UNUČADI!</div>
             </div>
         </div>
