@@ -281,7 +281,7 @@ main h1 {
     height: 26em;
 }
 #za-laku-noc audio {
-    width:65%;
+    width:40%;
     padding-left: 6.5em;
     border: 0;
     border-color: black;
@@ -410,7 +410,7 @@ span {
 }
 #desavase audio {
     margin-left: 4.5em;
-    width: 50%;
+    width: 35%;
 }
 aside.komentar {
     margin: 0px;
