@@ -17,7 +17,6 @@ function Vreme() {{
     document.getElementsByClassName("celo")[0].style.backgroundColor = "rgba(139, 0, 139, 0.974)";
     }
 
-
 const galerijaSlike = document.querySelectorAll('.galerija-slika')
         galerijaSlike.forEach(galerijaSlika => {
     galerijaSlika.addEventListener('mouseover', () => {
@@ -28,15 +27,12 @@ const galerijaSlike = document.querySelectorAll('.galerija-slika')
             })
 });
 
-
-
 var ime = document.getElementById("ime");
 var email = document.getElementById("email");
 var misljenje = document.getElementById("misljenje");
 
 var tekstIme = document.getElementById("tekstIme");
 var tekstEmail = document.getElementById("tekstEmail");
-
 
 function potvrda() {
 
@@ -55,7 +51,6 @@ function potvrda() {
         greska = true;
     }
 
-
     if (email.value == "") {
         tekstEmail.innerHTML = "Email je obavezan za unos";
         tekstEmail.style.color = "rgba(255, 218, 205, 0.979)";
@@ -67,8 +62,6 @@ function potvrda() {
         email.style.backgroundColor = "rgba(240, 218, 205, 0.999)";
         greska = true;
     }
-
-
 
     if (!greska) {
         ime.value = "";
@@ -112,11 +105,48 @@ function myFunction() {
     }
 }
 
+const mobmeniToggler = document.querySelector(".mobmeni-toggler");
+const mobmeniMenu = document.querySelector(".mobmeni ul");
+const mobmeniLinks = document.querySelectorAll(".mobmeni a")
 
-const meniIkona = document.querySelector('.meni-ikona');
-function toggleMeniIkona() {
-    meniIkona.classList.toggle('active')
+mobmeniToggler.addEventListener("click", mobmeniTogglerClick);
+
+function mobmeniTogglerClick() {
+    mobmeniToggler.classList.toggle("open-mobmeni-toggler");
+    mobmeniMenu.classList.toggle("open");
 }
-meniIkona.addEventListener('click', toggleMeniIkona);
+
+for (let i = 0; i < mobmeniLinks.length; i++) {
+    mobmeniLinks[i].addEventListener("click", mobmeniLinkClick);
+}
+
+function mobmeniLinkClick(event) {
+    smoothScroll(event) //call the smoothScroll
+    if (mobmeniMenu.classList.contains("open")) { //close navbarMenu in smaller screens
+        mobmeniToggler.click();
+    }
+}
+function smoothScroll(event) {
+    const targetID = event.currentTarget.getAttribute("href") === "#" ? "nav" : event.currentTarget.getAttribute("href");;
+    const targetPosition = document.querySelector(targetID).offsetTop
+    const startPosition = window.pageYOffset
+    const distance = targetPosition - startPosition
+    const duration = 4000;
+    let start = null;
+    window.requestAnimationFrame(step);
+
+    function step(timestamp) {
+        if (!start) start = timestamp;
+        const progress = timestamp - start;
+        window.scrollTo(0, linear(progress, startPosition, distance, duration));
+        if (progress < duration) window.requestAnimationFrame(step);
+    }
+    function linear(t, b, c, d) {
+        return c * t / d + b;
+    };
+}
+
+
+
 
 

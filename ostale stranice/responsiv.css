@@ -55,33 +55,40 @@
     * {
         font-size: 19px;
     }
-        body {
+    body {
         background-size: 100%;
     }
-     section {
-        overflow: scroll;
+    h1 {
+        margin-bottom: 0.4em;
     }
 }
 @media only screen and (max-width: 1680px) {
     * {
         font-size: 18px;
     }
+    button#klikmi {
+        margin-left: 25em;  
+  }
 }
 @media only screen and (max-width: 1550px) {
     * {
         font-size: 17px;
     }
+    button#klikmi {
+        margin-left: 26em;  
+  }
+
 }
 @media only screen and (max-width: 1450px) {
-   #savet button#klikmi,
-    #savet input#vreme,
+    button#klikmi,
+    input#vreme,
     #savet p.prst,
     #savet p.celo  {
         font-size: 1rem;
         font-weight: 400;
     }
-    #savet input#vreme {
-        margin-left: 13em;
+    button#klikmi {
+        margin-left: 30em;
     }
 }
 @media only screen and (max-width: 1369px) {
@@ -98,13 +105,21 @@
     * {
         font-size: 14px;
     }
-    #neko-nauci article {
+    article {
         line-height: 0.9em;
     }
+    button#klikmi {
+        margin-left: 28em;  
+    }
+
 } 
 @media (max-width: 990px)  {
     * {
         font-size: 12.5px;
+    }
+    h1 {
+        padding-top: 1.4em;
+        margin-bottom: 0.5em;
     }
     #home li {
         padding-right: 0.6em;
@@ -126,6 +141,10 @@
     #home li {
         padding-right: 0.4em;
     }
+    button#klikmi {
+        margin-left: 30em;
+    }
+
 } 
 @media  (max-width: 830px) {
     * {
@@ -139,8 +158,12 @@
     * {
         font-size: 8.5px;
     }
-        #home li {
+    #home li {
         padding-right: 0.2em;
+    }
+    h1 {
+        padding-top: 1.6em;
+        margin-bottom: 0.5em;
     }
 } 
 @media  (max-width: 790px) {
@@ -150,14 +173,110 @@
         #home li {
         padding-right: 0.1em;
     }
+            button#klikmi {
+        margin-left: 38em;
+    }
+
 } 
 @media  (max-width: 771px) {
     * {
         font-size: 7px;
     }
 } 
-
-@media  (max-width: 760px)   {
+@media  (max-width: 767px)   {
+    .mobmeni ul {
+        margin-top: 0px;
+        list-style-type: none;
+        width: 100%;
+        padding: 0;  
+        background-color: rgba(139, 0, 139, 0.990);
+        max-height: 0vh;
+        overflow: hidden;   
+        transition: all ease-in-out 0.7s;
+    }
+    .mobmeni ul.open {         /* sa ovim se izvrsava f-ja za prikaz padajuceg menija */
+        max-height: 100vh;
+    }
+    .mobmeni ul li a {
+        text-decoration: none;
+        font-size: 1.7rem;
+        font-weight: 500;
+        color: white;    
+        display: block;
+        text-align: center;
+        min-width: 120px;
+        padding: 0 30px;
+        border-bottom: 1px dotted rgba(255, 218, 205, 0.979);
+        border-radius: 1.5emem;
+    }
+    .mobmeni ul li a:hover {
+        background-color:  rgba(255, 218, 205, 0.979);
+        color: rgba(139, 0, 139, 0.990);
+        font-weight: 700;
+        cursor: pointer;
+    }
+    .mobmeni li button {
+        background-color:  rgba(255, 218, 205, 0.979);
+        color: rgba(139, 0, 139, 0.974);
+        margin-bottom: 1em;
+        padding: 0em 0.5em 0em 0.7em;
+        border-radius: 0em 0em 0em 3.25em;
+        font-size: 2rem;
+        font-weight: 700;
+}
+    .mobmeni li button:hover {
+        border-radius: 0em;
+        background-color:  rgba(139, 0, 139, 0.974);
+        color: rgba(250, 250, 250, 0.990);
+        cursor: pointer;
+        transform: scale(1.2);
+        transition: all 0.5s;
+        -webkit-box-shadow: 10px 10px 9px 1px rgba(90, 29, 64, 0.75);
+        -moz-box-shadow: 10px 10px 9px 1px rgba(90,29,64,0.75);
+        box-shadow: 10px 10px 9px 1px rgba(90,29,64,0.75);;
+}
+    .mobmeni .mobmeni-toggler {
+        display: block;
+        position: absolute;
+        top: 22.8em;
+        right: 5em;
+        height: 4.5em;
+        width: 4.5em;
+        background-color: rgba(139, 0, 139, 0.990);
+        color: white;
+        border: 2px solid white; 
+        outline: none;
+        padding: 0 5px;
+        cursor: pointer;
+    }
+    .mobmeni .mobmeni-toggler span,
+    .mobmeni .mobmeni-toggler span::before,
+    .mobmeni .mobmeni-toggler span::after {
+        display: block;
+        content: '';
+        margin-right: 0.1em;
+        background-color: rgba(250, 250, 250, 0.990);
+        height: 0.25em;
+        width: 2.2em;
+        border-radius: 0.5em;
+        transition: all ease-in-out 0.3s;
+}
+    .mobmeni .mobmeni-toggler span::before {
+        transform: translateY(-8px);
+        }
+    .mobmeni .mobmeni-toggler span::after {
+        transform: translateY(5px);
+        }
+    .mobmeni .mobmeni-toggler.open-mobmeni-toggler span {
+        background-color: transparent;
+        transform: rotate(90deg);
+        }
+    .mobmeni .mobmeni-toggler.open-mobmeni-toggler span::before {
+        transform: translateY(0px) rotate(45deg);
+        }
+    .mobmeni .mobmeni-toggler.open-mobmeni-toggler span::after {
+        transform: translateY(-3px) rotate(-45deg);
+        }
     * {
         font-size: 9px;
     }
@@ -167,121 +286,46 @@
     section {
         width: 100%;
     }
-    #home nav,
-    #desavase nav {
+    .meni,
+    #desavase aside {
         display: none;
     }
-    #hamburger {
-        display: flex;
-        max-width: 6em;
-        position: absolute;
-        bottom: 4.1em;
-        right: 4.1em;
-        cursor: pointer;
-        padding: 0em;
-    }
-
-    .meni-ikona {
-        background-color: rgba(139, 0, 139, 0.974);
-        display: grid;
-        place-items: center;
-        height: 5em;
-        width: 10em;
-        cursor: pointer;
-    }
-    .meni-ikona span {
-        width: 3.5em;
-        height: 0.2em;
-        background: rgba(250, 250, 250, 0.974);
-        display: block;
-        transition: all 0.3s ease-in-out;
-    }
-    /* .meni-ikona.linija-1 {
-        width: 30px;
-        justify-self: end;
-    }
-    .meni-ikona.linija-2 {
-        width: 30px;
-        justify-self: end;
-    } */
-    .meni-ikona.active span:nth-child(2) {
-        transform: translateX(10px);
-        opacity: 0;
-    }
-    .meni-ikona.active span:nth-child(3) {
-        transform-origin: center center;
-        transform: rotate(50deg) translate(-5px, -12px);
-        width: 3.6em;
-        padding-bottom: 0.3em;
-
-    }
-    .meni-ikona.active span:nth-child(1) {
-        transform-origin: center center;
-        transform: rotate(-50deg) translate(-15px, 9px);
-        width: 3.7em;
-        padding-bottom: 0.3em;
-    }
-
-    #neko-nauci article {
+    article {
         line-height: 0.7em;
     }
     .galerija-slike {
     grid-template-columns: 1fr 1fr;
     }
 }
-
+@media (max-width: 720px) {
+    button#klikmi {
+        margin-left: 33em;  
+  }
+}
 @media (max-width: 650px) {
-    #klikmi {
-        margin-left: 18em;
-    }
-    #klikmi,
-    #vreme,
-    p.prst,
-    p.celo  {
-        font-weight: 300;
-    }
-    #neko-nauci article {
+    article {
         line-height: 1.2em;
+    }
+    button#klikmi {
+    margin-left: 28em;   
     }
 }
 @media (max-width: 550px) {
-   #savet button#klikmi,
-    #savet input#vreme,
+    button#klikmi,
+    input#vreme,
     #savet p.prst,
     #savet p.celo  {
         font-size: 1rem;
     }
-    #klikmi {
-        margin-left: 16em;
-    }
-    #savet input#vreme {
-        margin-left: 10em; 
-    }
-    #savet p.celo {
-        margin-left: 2em;
-    }
-    #savet p.prst {
-        padding-left: 0em;
-        padding-right: 0em;
+    button#klikmi {
+    margin-left: 22em;   
     }
 }
 @media (max-width: 490px) {
-    #savet button#klikmi,
-    #savet input#vreme,
-    #savet p.prst,
-    #savet p.celo  {
-        font-size: 0.7rem;
-    }
-    #klikmi {
-        margin-left: 13em;
-    }
-    #savet input#vreme {
-        margin-left: 10em; 
-    }
-    #savet p.celo {
-        margin-left: 1.5em;
-    }
-    #neko-nauci article {
+    button#klikmi {
+        margin-left: 20em;  
+  }
+    article {
         line-height: 1.5em;
     }
     .tekst-na-slici {
@@ -295,21 +339,18 @@
         font-weight: 400;
     }
 }
-@media (max-width: 370px) {
-   #savet button#klikmi,
-    #savet input#vreme,
-    #savet p.prst,
-    #savet p.celo  {
-        font-size: 0.5rem;
-    }
-    #klikmi {
-        margin-left: 7em;
-    }
-        #savet input#vreme {
-        margin-left: 8em; 
-    }
-    #savet p.celo {
-        margin-left: 1em;
-    }
+@media (max-width: 450px) {
+    button#klikmi {
+        margin-left: 17em;  
+  }
+@media (max-width: 410px) {
+    button#klikmi {
+        margin-left: 15em;  
+  }
 }
-
+@media (max-width: 350px) {
+    button#klikmi {
+        margin-left: 11em;  
+  }
+}
+}

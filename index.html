@@ -11,19 +11,28 @@
     <link rel="stylesheet" href="ostale stranice/responsiv.css">
 </head>
 <body>
+    <div class="mobmeni">
+        <ul>
+            <li><a href="#home">POČETNA</a></li>
+            <li><a href="#o-meni">O MENI</li>
+            <li><a href="#savet">SAVET</a></li>
+            <li><a href="#put-radosti"><button>PUT RADOSTI <br>I SREĆE</button></a></li>
+            <li><a href="#za-laku-noc">ZA LAKU NOĆ</a></li>
+            <li><a href="#neko-nauci">NEKO NAUČI</a></li>
+            <li><a href="ostale stranice/desavase.html">DEŠAVA SE</a></li>
+        </ul>
+        <button class="mobmeni-toggler open-meni-toggler">
+            <span></span>
+        </button>
+    </div>
 <div class="kontejner">
     <section class="margina" id="home">
-        <main>    
+        <main>
             <h1>SAVET MLADIMA</h1> <br>
             <h2>Kojim putem?</h2>
-            <button type="button" id="hamburger"><div class="meni-ikona">
-                <span class="linija-1"></span>
-                <span class="linija-2"></span>
-                <span class="linija-3"></span>
-            </div></button>
         </main>
-            <nav class="meni" >
-            <ul >
+        <nav class="meni">
+            <ul>
                 <li><a href="#home">POČETNA</a></li>
                 <li><a href="#o-meni">O MENI</li>
                 <li><a href="#savet">SAVET</a></li>
@@ -32,7 +41,7 @@
                 <li><a href="#neko-nauci">NEKO NAUČI</a></li>
                 <li><a href="ostale stranice/desavase.html">DEŠAVA SE</a></li>
             </ul>
-            </nav>
+        </nav>
     </section>        
     <section class="margina" id="o-meni">
         <div>
@@ -42,7 +51,7 @@
             nažalost, veoma dugo.</p>
             <p>Verujem da ste prepoznali sebe odnosno da se moja mašta u mladosti nije bitno razlikovala od vaše sada: da završim
             fakultet, zaposlim se i napravim "karijeru". Start je obećavao. Bila sam odličan đak i odličan student, brzo sam dobila
-            i željeni posao. Bavila sam se sportom od malena pa mi ni energija, bitan preduslov da istrajemo u bilo čemu čime se bavimo,
+            i željeni posao. Bavila sam se sportom od malena, pa mi ni energija, bitan preduslov za uspeh u bilo čemu čime se baviš,
             nije manjkala. Ali, za napredovanje po vertikali bilo je potrebno još nešto što ne posedujem? Zahvaljujući baš takvim 
             okolnostima, Sreća me je pogledala... i postala sam majka. </p>
             <p> Imam 62 godine, sina, a od juna, i unuče. Da sam odmah shvatila skrivenu poruku tj svu lepotu koja se krije
@@ -67,10 +76,10 @@
             <p style="margin-top: 0px;">Galop na pogrešnom putu – ima li smisla? </p>
         <form name="vremeForma">
             <button name="setTimeout" id=klikmi onclick="Vreme()" type="button"> KLIKNI ME! </button>
-            <!-- <input name="setTimeout" id=klikmi type="button" value=" KLIKNI ME! " onclick="Vreme()" onclick="poruka()"> -->
-            <input id="vreme" type="text" name="cifre" size="22">
-            <p class="prst">&nbsp;&nbsp;&nbsp; Vreme “leti.”</p>
-                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p class="celo"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
+           <div><input id="vreme" type="text" name="cifre" size="12">
+                <p class="prst">Vreme “leti.”</p>
+                <p class="celo"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            </div>
         </form>
     </section>
     <section class="margina" id="put-radosti">

@@ -2,15 +2,13 @@
     /* outline: 1px dashed green; */
     box-sizing: border-box;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    scroll-behavior: smooth;
     font-size: 20px;
-
+    user-select: none;
 }
 a {
     text-decoration: none;
     color: rgba(250, 250, 250, 0.990);
     border-bottom: 1px solid transparent;
-
 }
 a:hover {
     background-color:  rgba(255, 218, 205, 0.979);
@@ -26,6 +24,74 @@ body {
     background-repeat: no-repeat;
     background-size: 95%;
     background-attachment: fixed;
+}
+.mobmeni {
+    background-color: transparent;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 10;    /* ako nema z index  ne vidi se  */
+    }
+.mobmeni ul {
+    list-style-type: none;
+}
+.mobmeni ul li a {
+    display: none;
+}
+.mobmeni .mobmeni-toggler {
+    display: none;
+}
+.meni {
+    margin: 0px;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 20%;
+    padding: 7em 3em 0em 0em;
+    padding-inline-start: 0px;
+    background-color: rgba(139, 0, 139, 0.974);
+    line-height: 4em;
+    text-align: right;
+}
+.meni li {
+    padding-right: 1em;
+    list-style-type: none;
+    background-color: rgba(139, 0, 139, 0.974);
+    color: rgba(250, 250, 250, 0.990);
+    font-size: 1rem;
+    font-weight: 500;
+    border-color: transparent !important;
+ }
+.meni li :hover {
+    box-sizing: content-box;
+    padding: 0.12em 0.4em 0.2em 0.4em;
+    background-color:  rgba(255, 218, 205, 0.979);
+    transition: all 0.2s;
+}
+.meni li button {
+    background-color: rgba(250, 250, 250, 0.990);
+    color: rgba(139, 0, 139, 0.974);
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    padding: 0.1em 0.5em 0.15em 0.7em;
+    border-color: transparent !important;
+    border-radius: 0em 0em 0em 3.25em;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.meni li button:hover {
+    border-radius: 1.5em;
+    background-color:  rgba(255, 218, 205, 0.979);
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: all 0.5s;
+    -webkit-box-shadow: 10px 10px 9px 1px rgba(90, 29, 64, 0.75);
+    -moz-box-shadow: 10px 10px 9px 1px rgba(90,29,64,0.75);
+    box-shadow: 10px 10px 9px 1px rgba(90,29,64,0.75);;
 }
 .kontejner {
     display: grid;
@@ -47,19 +113,6 @@ section div p {
     padding-left: 2.5em;
     padding-right: 2.5em;
 }
-section nav {
-    margin: 0px;
-    position: fixed;
-    top: 0px;
-    right: 0px;
-    height: 100%;
-    width: 20%;
-    padding: 7em 3em 0em 0em;
-    padding-inline-start: 0px;
-    background-color: rgba(139, 0, 139, 0.974);
-    line-height: 4em;
-    text-align: right;
-}
 section.margina {
     margin-top: 0px;
 }
@@ -73,57 +126,18 @@ section.margina {
     color: rgba(139, 0, 139, 0.974);
     background-position: center;
 }
-#home main h1 {
+main h1 {
     display: inline-block;
     padding-left: 1em;
-    padding-top: 0.5em;
+    padding-top: 0.7em;
     font-size: 5rem;
     text-shadow: 4px 2px 3px gray;
     margin-top: 0px;
-    margin-bottom: 0.9em;
+    margin-bottom: 0.6em;
 }
 #home main h2 {
     padding-left: 2.655em;
     font-size: 1.9rem ;
-}
-#hamburger {
-    display: none;
-}
-#home li {
-    padding-right: 1em;
-    list-style-type: none;
-    background-color: rgba(139, 0, 139, 0.974);
-    color: rgba(250, 250, 250, 0.990);
-    font-size: 1rem;
-    font-weight: 500;
-    border-color: transparent !important;
- }
-#home li :hover {
-    box-sizing: content-box;
-    padding: 0.12em 0.4em 0.2em 0.4em;
-    background-color:  rgba(255, 218, 205, 0.979);
-    transition: all 0.2s;
-}
-#home li button {
-    background-color: rgba(250, 250, 250, 0.990);
-    color: rgba(139, 0, 139, 0.974);
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
-    padding: 0.1em 0.5em 0.15em 0.7em;
-    border-color: transparent !important;
-    border-radius: 0em 0em 0em 3.25em;
-    font-size: 1.1rem;
-    font-weight: 500;
-}
-#home li button:hover {
-    border-radius: 1.5em;
-    background-color:  rgba(255, 218, 205, 0.979);
-    cursor: pointer;
-    transform: scale(1.2);
-    transition: all 0.5s;
-    -webkit-box-shadow: 10px 10px 9px 1px rgba(90, 29, 64, 0.75);
-    -moz-box-shadow: 10px 10px 9px 1px rgba(90,29,64,0.75);
-    box-shadow: 10px 10px 9px 1px rgba(90,29,64,0.75);;
 }
 #o-meni {
     height: 100vh;
@@ -157,60 +171,60 @@ section.margina {
     text-align: center;
     margin-top: 0.2em;
 }
-#savet button#klikmi {
-    margin: 0.2em 0em 1.2em 27.5em;
-    padding: 0em 0.5em;
+form div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+button#klikmi {
+    margin: 0.5em 0em 0.2em 28.5em;
+    padding: 0em 0.5em 0.2em;
     display: block;
-    justify-items: center;
     background-color: rgba(139, 0, 139, 0.974);
     color: rgba(250, 250, 250, 0.990);
     font-style: italic;
     font-size: 1.2rem;
     font-weight: 500;
-    letter-spacing: 0.05rem;
+    letter-spacing: 0.09rem;
     transition: all 0.5s;
     border-radius: 0.5rem;
+    cursor: pointer;
 }
-#savet button#klikmi:hover {
+button#klikmi:hover {
     background-color:  rgba(255, 218, 205, 0.979);
     color: rgba(139, 0, 139, 0.974);
     box-shadow: 8px 8px 7px 1px rgba(90,29,64,0.75);;
     -webkit-box-shadow: 8px 8px 7px 1px rgba(90, 29, 64, 0.75);
     -moz-box-shadow: 8px 8px 7px 1px rgba(90,29,64,0.75);
 }
-#savet input#vreme {
-    margin-left: 14em;
-    padding-bottom: 0.1em;
+input#vreme {
+    padding: 0.6em 0em 0.8em;
+    font-size: 1.3em;
+    font-weight: 600;
     border: none;
     background-color:  rgba(255, 218, 205, 0.979);
     color: rgba(250, 250, 250, 0.990);
     text-align: center;
     font-style: italic;
-    font-size: 1.24rem;
-    font-weight: 500;
     letter-spacing: 0.15rem;
     border-radius: 0.5rem;
-    vertical-align: top;
-    width: 12%;
+    width: 15%;
+    height: 1.2em;
 }
 #savet p.prst,
 #savet p.celo {
-    display: inline;
-    font-size: 1.2rem;
+    margin-bottom: 1.2em;
     letter-spacing: 0.05rem;
-    font-weight: 500;
+    font-size: 1.2em;
+    font-weight: 600;
 }
 #savet p.celo {
     border-radius: 0.5rem;
     color: rgba(250, 250, 250, 0.990);
-    margin-left: 3.7em;
-    padding: 0.05em 0.6em 0.11em 0.6em;
+    padding: 0.05em 0.6em 0.4em 0.6em;
     background-color:  rgba(255, 218, 205, 0.979);
-    width: inherit;
-}
-#savet p.prst {
-    padding-left: 3.3em;
-    padding-right: 0em;
+    height: 1.5em;
 }
 #put-radosti {
     height: 100vh;
@@ -268,7 +282,7 @@ section.margina {
     height: 26em;
 }
 #za-laku-noc audio {
-    width:40%;
+    width:65%;
     padding-left: 6.5em;
     border: 0;
     border-color: black;
@@ -277,7 +291,6 @@ section.margina {
     color: rgba(250, 250, 250, 0.990);
     padding-left: 3.1em;
     padding-top: 1em;
-
 }
 #za-laku-noc p {
     color: rgba(250, 250, 250, 0.990);
@@ -293,7 +306,7 @@ section.margina {
     padding-left: 2.8em;
     padding-right: 2.8em;
 }
-#neko-nauci div#nekoprored {
+div#nekoprored {
     line-height: 2em;
 }
 #neko-nauci a {
@@ -313,9 +326,8 @@ section.margina {
 #neko-nauci a:hover {
     background-color:  rgba(255, 218, 205, 0.979);
     color: rgba(139, 0, 139, 0.974);
-    
 }
-#neko-nauci article {
+article {
     position: relative;
     left: 5.2%;
     top: 0px;
@@ -399,9 +411,17 @@ span {
 }
 #desavase audio {
     margin-left: 4.5em;
-    width: 30%;
+    width: 50%;
 }
-#desavase nav {
+aside.komentar {
+    margin: 0px;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 20%;
+    padding-inline-start: 0px;
+    background-color: rgba(139, 0, 139, 0.974);
     padding: 0em 3.5em;
     line-height: 1em;
     display: flex;
@@ -414,7 +434,7 @@ label {
     font-size: 1em;
     font-weight: 600;
 }
-#desavase input,
+.komentar input,
 textarea {
     display: block;
     background-color: rgba(250, 250, 250, 0.990);
@@ -423,13 +443,13 @@ textarea {
     border: 1px solid rgb(180,180,180);
     transition: all 0.5s;
 }
-#desavase input {
+.komentar input {
     margin-top: 0.5em;
     margin-bottom: 1em;
     width: 100%;
     height: 1.8rem;
 }
-#desavase textarea {
+.komentar textarea {
     max-height: 14em;
     min-width: 95%;
     padding: 0.25em 0.25em 0.25em 0.5em;
@@ -439,7 +459,7 @@ textarea {
     vertical-align: middle;
 }
 /* vidi KAKO DA STAVIS PRIJAVU PREKO DRUSTVENIH MREZA */
-#desavase button#posalji {
+.komentar button#posalji {
     margin-top: 1em;
     width: 100%;
     height: 2rem;
@@ -451,12 +471,13 @@ textarea {
     font-size: 1.2em;
     font-weight: 600;
     transition: color 0.3s;
+    cursor: pointer;
 }
-#desavase button#posalji:hover {
+.komentar button#posalji:hover {
     background-color:  rgba(212, 206, 204, 0.747);
     color: rgba(250, 250, 250, 0.990);
 }
-#desavase footer {
+footer {
     position: relative;
     top: 1.2em;
     width: 88.2%;
@@ -465,13 +486,13 @@ textarea {
     color: rgba(250, 250, 250, 0.990);
     text-align: left;
 }
-#desavase footer p {
+footer p {
     font-size: 0.72rem;
     font-style: italic;
     font-weight: 700;
     text-align: justify;
 }
 .prazan-prostor {
-    margin-bottom: 2.6em;
+    margin-bottom: 4em;
 }
 
