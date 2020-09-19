@@ -120,7 +120,6 @@ for (let i = 0; i < mobmeniLinks.length; i++) {
     mobmeniLinks[i].addEventListener("click", mobmeniLinkClick);
 }
 
-<<<<<<< HEAD
 function mobmeniLinkClick(event) {
     smoothScroll(event) //call the smoothScroll
     if (mobmeniMenu.classList.contains("open")) { //close navbarMenu in smaller screens
@@ -146,55 +145,6 @@ function smoothScroll(event) {
         return c * t / d + b;
     };
 }
-=======
-const mobmeniToggler = document.querySelector(".mobmeni-toggler");
-const mobmeniMenu = document.querySelector(".mobmeni ul");
-const mobmeniLinks = document.querySelectorAll(".mobmeni a")
-
-mobmeniToggler.addEventListener("click", mobmeniTogglerClick);
-
-function mobmeniTogglerClick() {
-    mobmeniToggler.classList.toggle("open-mobmeni-toggler");
-    mobmeniMenu.classList.toggle("open");
-}
-
-// navbarLinks.forEach(elem => elem.addEventListener("click", navbarLinkClick)); //bez ovog ne primenjuje se lagano skrolovanje
-// Umesto sa funkcijom forEach moze i sa for petljom jer petlju svi browseri pdrzavaju
-
-for (let i = 0; i < mobmeniLinks.length; i++) {
-    mobmeniLinks[i].addEventListener("click", mobmeniLinkClick);
-}
-
-
-
-function mobmeniLinkClick(event) {
-    smoothScroll(event) //call the smoothScroll
-
-    if (mobmeniMenu.classList.contains("open")) { //close navbarMenu in smaller screens
-        mobmeniToggler.click();
-    }
-}
-function smoothScroll(event) {
-    const targetID = event.currentTarget.getAttribute("href") === "#" ? "nav" : event.currentTarget.getAttribute("href");;
-    const targetPosition = document.querySelector(targetID).offsetTop
-    const startPosition = window.pageYOffset
-    const distance = targetPosition - startPosition
-    const duration = 4000;
-    let start = null;
-    window.requestAnimationFrame(step);
-
-
-    function step(timestamp) {
-        if (!start) start = timestamp;
-        const progress = timestamp - start;
-        window.scrollTo(0, linear(progress, startPosition, distance, duration));
-        if (progress < duration) window.requestAnimationFrame(step);
-    }
-    function linear(t, b, c, d) {
-        return c * t / d + b;
-    };
-}
->>>>>>> d04e970dcb198d23b16b8e48476351a84ade1871
 
 
 
