@@ -238,13 +238,8 @@
     .mobmeni .mobmeni-toggler {
         display: block;
         position: absolute;
-<<<<<<< HEAD
-        top: 22.8em;
-        right: 5em;
-=======
         top: 1.2em;
         right: 2em;
->>>>>>> d04e970dcb198d23b16b8e48476351a84ade1871
         height: 4.5em;
         width: 4.5em;
         background-color: rgba(139, 0, 139, 0.990);
@@ -295,31 +290,24 @@
     #desavase aside {
         display: none;
     }
-<<<<<<< HEAD
     article {
-=======
-    #neko-nauci article {
->>>>>>> d04e970dcb198d23b16b8e48476351a84ade1871
         line-height: 0.7em;
     }
     .galerija-slike {
     grid-template-columns: 1fr 1fr;
     }
 }
-<<<<<<< HEAD
 @media (max-width: 720px) {
     button#klikmi {
         margin-left: 33em;  
   }
 }
-=======
->>>>>>> d04e970dcb198d23b16b8e48476351a84ade1871
 @media (max-width: 650px) {
     article {
         line-height: 1.2em;
     }
     button#klikmi {
-    margin-left: 28em;   
+    margin-left: 30em;   
     }
 }
 @media (max-width: 550px) {
@@ -330,27 +318,14 @@
         font-size: 0.7rem;
     }
     button#klikmi {
-    margin-left: 22em;   
+    margin-left: 35em;   
     }
 }
 @media (max-width: 490px) {
-<<<<<<< HEAD
     button#klikmi {
-        margin-left: 20em;  
+        margin-left: 27em;  
   }
     article {
-=======
-    #klikmi {
-        margin-left: 13em;
-    }
-    #savet input#vreme {
-        margin-left: 10em; 
-    }
-    #savet p.celo {
-        margin-left: 1.5em;
-    }
-    #neko-nauci article {
->>>>>>> d04e970dcb198d23b16b8e48476351a84ade1871
         line-height: 1.5em;
     }
     .tekst-na-slici {
@@ -364,37 +339,18 @@
         font-weight: 400;
     }
 }
-<<<<<<< HEAD
 @media (max-width: 450px) {
     button#klikmi {
-        margin-left: 17em;  
+        margin-left: 25em;  
   }
 @media (max-width: 410px) {
     button#klikmi {
-        margin-left: 15em;  
+        margin-left: 21em;  
   }
 }
 @media (max-width: 350px) {
     button#klikmi {
-        margin-left: 11em;  
+        margin-left: 17em;  
   }
 }
-=======
-@media (max-width: 400px) {
-    button#klikmi,
-    #savet input#vreme,
-    p.prst,
-    p.celo  {
-        font-size: 0.2rem;
-    }
-    button #klikmi {
-        margin-left: 20em;
-    }
-    #savet input#vreme {
-        margin-left: 10em; 
-    }
-    p.celo {
-        margin-left: 1em;
-    }
->>>>>>> d04e970dcb198d23b16b8e48476351a84ade1871
 }
