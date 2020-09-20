@@ -177,7 +177,7 @@ form div {
     align-items: center;
 }
 button#klikmi {
-    margin: 0.5em 0em 0.2em 28.5em;
+    margin: 0.5em auto;
     padding: 0em 0.5em 0.2em;
     display: block;
     background-color: rgba(139, 0, 139, 0.974);
