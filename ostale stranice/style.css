@@ -277,11 +277,11 @@ input#vreme {
     background-color: rgba(70, 70, 70, 0.1);
     height: 100vh;
 }
-#za-laku-noc div.razmak {
-    height: 26em;
+.razmak {
+    height: 28em;
 }
 #za-laku-noc audio {
-    width:65%;
+    width:60%;
     padding-left: 6.5em;
     border: 0;
     border-color: black;
@@ -388,7 +388,7 @@ span {
         color: rgba(139, 0, 139, 0.974);
 }
 #desavase h2{
-    padding: 0.64em 0em 0.4em 2.1em;
+    padding: 0.64em 0em 0.2em 2.1em;
     letter-spacing: 0.18em;
 }
 #desavase p {
@@ -397,8 +397,8 @@ span {
     font-weight: 600;
 }
 .izvor {
-    padding: 0em 3.4em 0em 3.25em;
-    font-size: 0.3rem;
+    padding: 0em 3.4em 0em 3.25em; 
+    font-size: 0.3rem; 
     font-style: italic;
     font-weight: normal;
 }
@@ -492,6 +492,6 @@ footer p {
     text-align: justify;
 }
 .prazan-prostor {
-    margin-bottom: 4em;
+    margin-bottom: 3em;
 }
 

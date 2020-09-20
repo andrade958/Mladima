@@ -76,8 +76,7 @@
     }
     button#klikmi {
         margin-left: 26em;  
-  }
-
+    }
 }
 @media only screen and (max-width: 1450px) {
     button#klikmi,
@@ -111,7 +110,6 @@
     button#klikmi {
         margin-left: 28em;  
     }
-
 } 
 @media (max-width: 990px)  {
     * {
@@ -144,13 +142,12 @@
     button#klikmi {
         margin-left: 30em;
     }
-
 } 
 @media  (max-width: 830px) {
     * {
         font-size: 9px;
     }
-        #home li {
+    #home li {
         padding-right: 0.3em;
     }
 } 
@@ -170,13 +167,12 @@
     * {
         font-size: 7.5px;
     }
-        #home li {
+    #home li {
         padding-right: 0.1em;
     }
-            button#klikmi {
+    button#klikmi {
         margin-left: 38em;
     }
-
 } 
 @media  (max-width: 771px) {
     * {
@@ -184,6 +180,15 @@
     }
 } 
 @media  (max-width: 767px)   {
+    * {
+        font-size: 9px;
+    }
+    body {
+        background-size: 100%;
+    }
+    section {
+        width: 100%;
+    }
     .mobmeni ul {
         margin-top: 0px;
         list-style-type: none;
@@ -277,15 +282,6 @@
     .mobmeni .mobmeni-toggler.open-mobmeni-toggler span::after {
         transform: translateY(-3px) rotate(-45deg);
         }
-    * {
-        font-size: 9px;
-    }
-    body {
-        background-size: 100%;
-    }
-    section {
-        width: 100%;
-    }
     .meni,
     #desavase aside {
         display: none;
