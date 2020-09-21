@@ -276,11 +276,8 @@
         line-height: 1.5em;
     }
     .tekst-na-slici {
-        font-size: 1.2rem;
+        font-size: 1rem;
         font-weight: 400;
-        justify-content: left;
-        padding-left: 2em;
-        padding-top: 5em;
     } 
     .tekst-na-slici:hover{
         font-weight: 400;

@@ -153,6 +153,8 @@ main h1 {
 }
 #savet {
     height: 100vh;
+    background-color: rgba(139, 0, 139, 0.974);
+    color: rgba(250, 250, 250, 0.990);
 }
 #savet h2 {
     margin-bottom: 0px;
@@ -168,7 +170,7 @@ main h1 {
 } 
 #savet .slika {
     text-align: center;
-    margin-top: 0.2em;
+    margin-top: 0.5em;
 }
 form div {
     display: flex;
@@ -177,14 +179,14 @@ form div {
     align-items: center;
 }
 button#klikmi {
-    margin: 0.5em auto;
+    margin: 0.4em auto;
     padding: 0em 0.5em 0.2em;
     display: block;
-    background-color: rgba(139, 0, 139, 0.974);
-    color: rgba(250, 250, 250, 0.990);
+    background-color: rgba(250, 250, 250, 0.990);
+    color: rgba(139, 0, 139, 0.974);
     font-style: italic;
     font-size: 1.2rem;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: 0.09rem;
     transition: all 0.5s;
     border-radius: 0.5rem;
@@ -199,31 +201,34 @@ button#klikmi:hover {
 }
 input#vreme {
     padding: 0.6em 0em 0.8em;
-    font-size: 1.3em;
+    font-size: 1.2em;
     font-weight: 600;
     border: none;
     background-color:  rgba(255, 218, 205, 0.979);
     color: rgba(250, 250, 250, 0.990);
     text-align: center;
     font-style: italic;
-    letter-spacing: 0.15rem;
     border-radius: 0.5rem;
-    width: 15%;
-    height: 1.2em;
+    width: 13%;
+    height: 1.62rem;
 }
 #savet p.prst,
 #savet p.celo {
     margin-bottom: 1.2em;
     letter-spacing: 0.05rem;
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: 600;
+}
+#savet p.prst {
+    padding-left: 1em;
+    padding-right: 1.2em;
 }
 #savet p.celo {
     border-radius: 0.5rem;
     color: rgba(250, 250, 250, 0.990);
-    padding: 0.05em 0.6em 0.4em 0.6em;
+    padding: 0.05em 0.6em 1.5em 0.6em;
     background-color:  rgba(255, 218, 205, 0.979);
-    height: 1.5em;
+    height: 1.73rem;
 }
 #put-radosti {
     height: 100vh;
@@ -494,7 +499,7 @@ footer {
     text-align: left;
 }
 footer p {
-    font-size: 0.72rem;
+    font-size: 0.75rem;
     font-style: italic;
     font-weight: 700;
     text-align: justify;
