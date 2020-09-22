@@ -58,9 +58,6 @@
     body {
         background-size: 100%;
     }
-    h1 {
-        margin-bottom: 0.4em;
-    }
 }
 @media only screen and (max-width: 1680px) {
     * {
@@ -79,12 +76,12 @@
 }
 @media only screen and (max-width: 1260px) {
     *  {
-        font-size: 15px;
+        font-size: 14.5px;
     }
 }
 @media only screen and (max-width: 1120px) {
     * {
-        font-size: 14px;
+        font-size: 12.5px;
     }
     article {
         line-height: 0.9em;
@@ -92,64 +89,32 @@
 } 
 @media (max-width: 990px)  {
     * {
-        font-size: 12.5px;
-    }
-    h1 {
-        padding-top: 1.4em;
-        margin-bottom: 0.5em;
-    }
-    #home li {
-        padding-right: 0.6em;
-    }
-    #home li :hover {
-        padding: 0em;
-        background-color: darkmagenta;
-        color:  rgba(255, 218, 205, 0.979);
-        transition: color 0.3s;
-    }
-    #home li button:hover {
-    background-color: darkmagenta;
+        font-size: 11.2px;
     }
 }
 @media  (max-width: 892px) {
     * {
         font-size: 10px;
     }
-    #home li {
-        padding-right: 0.4em;
-    }
 } 
 @media  (max-width: 830px) {
     * {
-        font-size: 9px;
-    }
-    #home li {
-        padding-right: 0.3em;
+        font-size: 9.5px;
     }
 } 
 @media  (max-width: 800px) {
     * {
-        font-size: 8.5px;
-    }
-    #home li {
-        padding-right: 0.2em;
-    }
-    h1 {
-        padding-top: 1.6em;
-        margin-bottom: 0.5em;
+        font-size: 9px;
     }
 } 
 @media  (max-width: 790px) {
     * {
-        font-size: 7.5px;
-    }
-    #home li {
-        padding-right: 0.1em;
+        font-size: 8.5px;
     }
 } 
 @media  (max-width: 771px) {
     * {
-        font-size: 7px;
+        font-size: 8px;
     }
 } 
 @media  (max-width: 767px)   {
@@ -274,13 +239,6 @@
 @media (max-width: 490px) {
     article {
         line-height: 1.5em;
-    }
-    .tekst-na-slici {
-        font-size: 1rem;
-        font-weight: 400;
-    } 
-    .tekst-na-slici:hover{
-        font-weight: 400;
     }
 }
 

@@ -115,7 +115,7 @@ section div p {
 section.margina {
     margin-top: 0px;
 }
-#home main {
+.home main {
     position: relative;
     width: 100%;
     height: 100vh;
@@ -131,44 +131,44 @@ main h1 {
     padding-top: 0.7em;
     font-size: 5rem;
     text-shadow: 4px 2px 3px gray;
-    margin-top: 0px;
-    margin-bottom: 0.6em;
+    margin: 0.6em 0em 0em 0.8em;
+    /* margin-bottom: 0em; */
 }
-#home main h2 {
-    padding-left: 2.655em;
+.home main h2 {
+    padding-left: 4.82em;
     font-size: 1.9rem ;
 }
-#o-meni {
+.o-meni {
     height: 100vh;
 }
-#o-meni h2 {
+.o-meni h2 {
     padding-top: 1.8em;
     padding-left: 3.35em;
     margin-bottom: 1.4em;
 }
-#o-meni p {
+.o-meni p {
     display: block;
     padding: 0.22em 5.4em;
     line-height: 1.9em;
 }
-#savet {
+.savet {
     height: 100vh;
     background-color: rgba(139, 0, 139, 0.974);
     color: rgba(250, 250, 250, 0.990);
 }
-#savet h2 {
+.savet h2 {
     margin-bottom: 0px;
     padding-top: 0.15em;
     padding-left: 1.7em;
     word-spacing: 0.25em;
 } 
-#savet p {
+.savet p {
     margin-bottom: 0px;
     padding-left: 2.8em;
     padding-right: 2.8em;
     word-spacing: 0.2em;
 } 
-#savet .slika {
+.savet .slika {
     text-align: center;
     margin-top: 0.5em;
 }
@@ -209,31 +209,33 @@ input#vreme {
     text-align: center;
     font-style: italic;
     border-radius: 0.5rem;
-    width: 13%;
+    width: 14%;
     height: 1.62rem;
+    transition: all 4s;
 }
-#savet p.prst,
-#savet p.celo {
+.savet p.prst,
+.savet p.celo {
     margin-bottom: 1.2em;
     letter-spacing: 0.05rem;
     font-size: 1.1em;
     font-weight: 600;
 }
-#savet p.prst {
+.savet p.prst {
     padding-left: 1em;
     padding-right: 1.2em;
 }
-#savet p.celo {
+.savet p.celo {
     border-radius: 0.5rem;
     color: rgba(250, 250, 250, 0.990);
-    padding: 0.05em 0.6em 1.5em 0.6em;
+    padding: 0.05em 0.6em 0.8em 0.6em;
     background-color:  rgba(255, 218, 205, 0.979);
     height: 1.73rem;
+    transition: all 4s;
 }
-#put-radosti {
+.put-radosti {
     height: 100vh;
 }
-#put-radosti h2 {
+.put-radosti h2 {
     margin: 0em 0em 0em 0.08em;
     padding: 0.2em 0em 0.1em 0.4em;
 }
@@ -278,42 +280,42 @@ input#vreme {
     transition: 0.5s;
     filter: brightness(60%);
 }
-#za-laku-noc {
+.za-laku-noc {
     background-color: rgba(70, 70, 70, 0.1);
     height: 100vh;
 }
 .razmak {
     height: 28em;
 }
-#za-laku-noc audio {
+.za-laku-noc audio {
     width:60%;
     padding-left: 6.5em;
     border: 0;
     border-color: black;
 }
-#za-laku-noc h2 {
+.za-laku-noc h2 {
     color: rgba(250, 250, 250, 0.990);
     padding-left: 3.1em;
     padding-top: 1em;
 }
-#za-laku-noc p {
+.za-laku-noc p {
     color: rgba(250, 250, 250, 0.990);
     padding-left: 5em;
 }
-#neko-nauci {
+.neko-nauci {
     height: 100vh;
 }
-#neko-nauci h2 {
+.neko-nauci h2 {
     padding-left: 1.6em;
 }
-#neko-nauci p {
+.neko-nauci p {
     padding-left: 2.8em;
     padding-right: 2.8em;
 }
 div#nekoprored {
     line-height: 2em;
 }
-#neko-nauci a {
+.neko-nauci a {
     margin-top: 0.5em;
     margin-right: 3.2em;
     float: right; 
@@ -327,7 +329,7 @@ div#nekoprored {
     background-color: rgba(139, 0, 139, 0.974);
     transition: all 0.2s;
 }
-#neko-nauci a:hover {
+.neko-nauci a:hover {
     background-color:  rgba(255, 218, 205, 0.979);
     color: rgba(139, 0, 139, 0.974);
 }
@@ -365,7 +367,7 @@ article header h6 {
     margin: 0em 0em 0em 1.4em;
     font-size: 0.8rem;
 }
-#desavase {
+.desavase {
     position: relative;
     height: 100vh;
 }
@@ -375,7 +377,7 @@ span {
     font-weight: 700;
 
 }
-#desavase a {
+.desavase a {
     position: absolute;
     top: 2.87em;
     right: 2.93em;
@@ -388,15 +390,15 @@ span {
     line-height: 1.25em;
     transition: all 0.2s;
 }
-#desavase a:hover {
+.desavase a:hover {
         background-color:  rgba(255, 218, 205, 0.979);
         color: rgba(139, 0, 139, 0.974);
 }
-#desavase h2{
+.desavase h2{
     padding: 0.64em 0em 0.6em 2.1em;
     letter-spacing: 0.18em;
 }
-#desavase p {
+.desavase p {
     padding: 0.07em 3.1em 0em 3.5em;
     font-weight: 600;
 }
@@ -407,21 +409,21 @@ span {
     font-style: italic;
     font-weight: normal;
 }
-#desavase li {
+.desavase li {
     list-style-type: circle;
     text-indent: 6em;
     font-size: 1.3rem;
     font-style: italic;
     font-weight: 600;
 }
-#desavase li p {
+.desavase li p {
     padding: 0.07em 3.1em 0em 0em;
     margin-block-start: 0em;
     margin-block-end: 0em;
     margin-inline-start: 0px;
     margin-inline-end: 0px
 }
-#desavase audio {
+.desavase audio {
     margin-left: 4.3em;
     width: 50%;
 }
