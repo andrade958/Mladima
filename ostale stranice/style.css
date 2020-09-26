@@ -231,7 +231,7 @@ input#vreme {
     padding: 0.05em 0.6em 0.8em 0.6em;
     background-color:  rgba(255, 218, 205, 0.979);
     height: 1.73rem;
-    transition: all 4s;
+    transition: all 3s;
 }
 .put-radosti {
     height: 100vh;

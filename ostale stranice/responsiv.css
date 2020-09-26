@@ -267,11 +267,8 @@
         font-size: 1.2em;
     }
 @media (max-width: 400px) {
-    * {
-        font-size: 9px;
-    }
     .tekst na slici {
-        font-size: 1em;
+        font-size: 0.8em;
         font-weight: 400;
     }
     .tekst-na-slici:hover{
