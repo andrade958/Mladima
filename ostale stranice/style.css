@@ -72,6 +72,7 @@ body {
     transition: all 0.2s;
 }
 .meni li button {
+    box-sizing: content-box;
     background-color: rgba(250, 250, 250, 0.990);
     color: rgba(139, 0, 139, 0.974);
     margin-top: 1.5em;
@@ -149,7 +150,7 @@ main h1 {
 .o-meni p {
     display: block;
     padding: 0.22em 5.4em;
-    line-height: 1.9em;
+    line-height: 1.98em;
 }
 .savet {
     height: 100vh;
@@ -405,7 +406,7 @@ span {
 .izvor {
     margin-left: 3.3em;
     padding: 0em 3.4em 0em 3.25em; 
-    font-size: 0.7rem; 
+    font-size: 0.7em; 
     font-style: italic;
     font-weight: normal;
 }

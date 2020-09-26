@@ -79,48 +79,70 @@
         font-size: 14.5px;
     }
 }
-@media only screen and (max-width: 1120px) {
-    * {
-        font-size: 12.5px;
+@media only screen and (max-width: 1110px) {
+    *  {
+        font-size: 13.9px;
     }
+}
+@media only screen and (max-width: 1068px) {
+    *  {
+        font-size: 13.6px;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    * {
+        font-size: 13.3px;
+    }
+    .meni li {
+        padding-right: 0.8em;
+    }
+
     article {
         line-height: 0.9em;
     }
-} 
-@media (max-width: 990px)  {
+}
+@media only screen and (max-width: 1030px) {
     * {
-        font-size: 11.2px;
+        font-size: 13px;
     }
 }
-@media  (max-width: 892px) {
+@media only screen and (max-width: 1010px) {
+    * {
+        font-size: 12.7px;
+    }
+}
+@media (max-width: 990px)  {
+    * {
+        font-size: 12.5px;
+    }
+    .meni li {
+        padding-right: 0.55em;
+    }
+    .meni li :hover {
+        padding: 0em;
+        background-color: darkmagenta;
+        color:  rgba(255, 218, 205, 0.979);
+        transition: color 0.3s;
+    }
+    .meni li button:hover {
+    background-color: darkmagenta;
+    }
+}
+@media  (max-width: 960px) {
     * {
         font-size: 10px;
     }
-} 
-@media  (max-width: 830px) {
-    * {
-        font-size: 9.5px;
+}
+@media  (max-width: 810px) {
+    .meni li {
+        padding-right: 0.1em;
     }
-} 
-@media  (max-width: 800px) {
-    * {
-        font-size: 9px;
-    }
-} 
-@media  (max-width: 790px) {
-    * {
-        font-size: 8.5px;
-    }
-} 
-@media  (max-width: 771px) {
-    * {
-        font-size: 8px;
+    .meni li button {
+        font-size: 1em;
     }
 } 
 @media  (max-width: 767px)   {
-    * {
-        font-size: 9px;
-    }
     body {
         background-size: 100%;
     }
@@ -233,12 +255,28 @@
 }
 @media (max-width: 650px) {
     article {
-        line-height: 1.2em;
+        line-height: 1em;
     }
 }
 @media (max-width: 490px) {
     article {
-        line-height: 1.5em;
+        line-height: 1.2em;
     }
 }
+    .tekst na slici {
+        font-size: 1.2em;
+    }
+@media (max-width: 400px) {
+    * {
+        font-size: 9px;
+    }
+    .tekst na slici {
+        font-size: 1em;
+        font-weight: 400;
+    }
+    .tekst-na-slici:hover{
+        font-weight: 400;
+    }
+}
+
 
