@@ -57,6 +57,7 @@ body {
     text-align: right;
 }
 .meni li {
+    box-sizing: content-box;
     padding-right: 1em;
     list-style-type: none;
     background-color: rgba(139, 0, 139, 0.974);
