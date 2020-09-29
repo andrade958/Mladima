@@ -21,8 +21,9 @@ body {
     background-color: rgba(250, 250, 250, 0.990);
     background-image: url("../slike/zalakunoc.jpg");
     background-repeat: no-repeat;
-    background-size: 95%;
+    background-size: cover;
     background-attachment: fixed;
+    background-position: 0em -3em ;
 }
 .mobmeni {
     background-color: transparent;
@@ -57,7 +58,6 @@ body {
     text-align: right;
 }
 .meni li {
-    box-sizing: content-box;
     padding-right: 1em;
     list-style-type: none;
     background-color: rgba(139, 0, 139, 0.974);
@@ -67,13 +67,11 @@ body {
     border-color: transparent !important;
  }
 .meni li :hover {
-    box-sizing: content-box;
     padding: 0.12em 0.4em 0.2em 0.4em;
     background-color:  rgba(255, 218, 205, 0.979);
     transition: all 0.2s;
 }
 .meni li button {
-    box-sizing: content-box;
     background-color: rgba(250, 250, 250, 0.990);
     color: rgba(139, 0, 139, 0.974);
     margin-top: 1.5em;
@@ -133,8 +131,7 @@ main h1 {
     padding-top: 0.7em;
     font-size: 5rem;
     text-shadow: 4px 2px 3px gray;
-    margin: 0.6em 0em 0em 0.8em;
-    /* margin-bottom: 0em; */
+    margin: 0.6em 1em 0em 0.8em;
 }
 .home main h2 {
     padding-left: 4.82em;
@@ -287,7 +284,7 @@ input#vreme {
     height: 100vh;
 }
 .razmak {
-    height: 28em;
+    height: 26.5em;
 }
 .za-laku-noc audio {
     width:60%;
