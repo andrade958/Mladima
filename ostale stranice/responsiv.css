@@ -5,7 +5,23 @@
     section {
         overflow: scroll;
     }
+    /* .razmak {
+        height: 37em;
+    }
+    body {
+        background-position: -30em 0em ;
+        background-size: 115%;
+    } */
 }
+/* @media only screen and (max-width: 9200px) {
+    .razmak {
+        height: 32em;
+    }
+    body {
+        background-position: -30em -5em ;
+        background-size: 117%;
+    }
+} */
 @media only screen and (max-width: 8200px) {
     * {
         font-size: 84px;
@@ -15,6 +31,13 @@
     * {
         font-size: 75px;
     }
+        /* .razmak {
+        height: 34em;
+    }
+    body {
+        background-position: -20em -5em ;
+        background-size: 125%;
+    } */
 }
 @media only screen and (max-width: 6000px) {
     * {
@@ -56,40 +79,77 @@
         font-size: 19px;
     }
     body {
-        background-size: 100%;
+        background-position: -14em -5em ;
+        background-size: 104%;
     }
 }
 @media only screen and (max-width: 1680px) {
     * {
         font-size: 18px;
     }
+        body {
+        background-position: -14em -5em ;
+        background-size: 107%;
+    }
+
 }
 @media only screen and (max-width: 1550px) {
     * {
         font-size: 17px;
+    }
+        body {
+        background-position: -12em -5em ;
+        background-size: 110%;
     }
 }
 @media only screen and (max-width: 1369px) {
     * {
         font-size: 16px;
     }
+    body {
+        background-position: -11em -5em ;
+        background-size: 115%;
+    }
+    /* .razmak {
+        height: 26em;
+    } */
 }
 @media only screen and (max-width: 1260px) {
     *  {
         font-size: 14.5px;
     }
+    body {
+        background-position: -10em -5em ;
+        background-size: 120%;
+    }
+    /* .razmak {
+        height: 26.5em;
+    } */
 }
 @media only screen and (max-width: 1110px) {
     *  {
         font-size: 13.9px;
+    }
+    body {
+        background-position: -14em -5em ;
+        background-size: 125%;
+    }
+    .razmak {
+        height: 26.7em;
     }
 }
 @media only screen and (max-width: 1068px) {
     *  {
         font-size: 13.6px;
     }
+    body {
+        background-position: -16em -5em ;
+        background-size: 130%;
+    }
+    .razmak {
+        height: 27em;
+    }
 }
-
 @media only screen and (max-width: 1050px) {
     * {
         font-size: 13.3px;
@@ -111,10 +171,24 @@
     * {
         font-size: 12.7px;
     }
+    body {
+        background-position: -20em -7em ;
+        background-size: 140%;
+    }
+    .razmak {
+        height: 28em;
+    }
 }
 @media (max-width: 990px)  {
     * {
         font-size: 12.5px;
+    }
+    body {
+        background-position: -25em -9em ;
+        background-size: 145%;
+    }
+    .razmak {
+        height: 30em;
     }
     .meni li {
         padding-right: 0.55em;
@@ -133,11 +207,22 @@
     * {
         font-size: 10px;
     }
+    body {
+        background-position: -30em -10em ;
+        background-size: 150%;
+    }
+    .razmak {
+        height: 38em;
+    }
 }
 @media  (max-width: 903px) {
-    /* * {
-        font-size: 9px;
-    } */
+    body {
+        background-position: -35em -14em ;
+        background-size: 160%;
+    }
+    .razmak {
+        height: 38em;
+    }
         .meni li {
         padding-right: 0.1em;
         font-size: 0.9;
@@ -148,13 +233,15 @@
         font-weight: 300;
         padding: 0.1em 0.3em 0.15em;
     }
-
 }
 @media  (max-width: 840px) {
-    /* body {
-         background-position: 0em 0em ;
-         background-size: 132%;
-            } */
+        body {
+            background-position: -65em -20em ;
+            background-size: 190%;
+    }
+        .razmak {
+            height: 38em;
+    }
     .meni li {
         font-size: 0.8em;
         padding-right: 0.08em;
@@ -169,6 +256,13 @@
         * {
             font-size: 9px;
         }
+        body {
+            background-position: -75em -25em ;
+            background-size: 200%;
+    }
+        .razmak {
+            height: 40em;
+    }
         .meni li {
         font-size: 0.3em;
     }
@@ -182,7 +276,11 @@
         font-size: 10px;
     }
     body {
-        background-size: 100%;
+         background-position: -60em -18em ;
+         background-size: 230%;
+    }
+    .razmak {
+        height: 40em;
     }
     section {
         width: 100%;
@@ -293,19 +391,32 @@
 }
 @media (max-width: 650px) {
     body {
-         background-position: -30em 0em ;
-         background-size: 165%;
-            }
+         background-position: -55em -10em ;
+         background-size: 225%;
+    }
+    .razmak {
+        height: 40em;
+    }
     article {
         line-height: 1em;
     }
 }
+@media (max-width: 570px) {
+    body {
+         background-size: 250%;
+    }
+    .razmak {
+        height: 37em;
+    }
+}
 @media (max-width: 490px) {
     body {
-        background-position: -50em -5em;
-         background-size: 225%;
+        background-position: -40em -5em;
+         background-size: 270%;
             }
-
+    .razmak {
+        height: 34em;
+    }
     article {
         line-height: 1.2em;
     }
@@ -313,18 +424,17 @@
     .tekst na slici {
         font-size: 1.2em;
     }
-@media (max-width: 400px) {
+@media (max-width: 405px) {
     * {
         font-size: 9.1px;
     }
     body {
-        background-position: -60em -5em;
-         background-size: 280%;
+        background-position: -50em -6em;
+         background-size: 310%;
             }
     .razmak {
-        height: 32em;
+        height: 33.5em;
     }
-
     .tekst na slici {
         font-size: 0.8em;
         font-weight: 400;
@@ -333,16 +443,18 @@
         font-weight: 400;
     }
 }
-
 @media (max-width: 380px) {
     body {
-         background-size: 300%;
+        background-position: -55em -7em;
+         background-size: 333%;
             }
-
+    .razmak {
+        height: 34.5em;
+    }
     main h1 {
-    padding-left: 0.3em;
-    padding-top: 0.2em;
-    text-shadow: 4px 2px 3px gray;
+        padding-left: 0.3em;
+        padding-top: 0.2em;
+        text-shadow: 4px 2px 3px gray;
 }
     .home main h2 {
     padding-left: 3em;
