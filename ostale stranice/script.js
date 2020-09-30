@@ -39,7 +39,6 @@ var tekstIme = document.getElementById("tekstIme");
 var tekstEmail = document.getElementById("tekstEmail");
 
 function potvrda() {
-
     var greska = false;
 
     if (ime.value == "") {
@@ -47,37 +46,35 @@ function potvrda() {
         tekstIme.style.color = "rgba(255, 218, 205, 0.979)";
         ime.style.backgroundColor = "rgba(240, 218, 205, 0.999)";
         greska = true;
-    } else if (ime.value.length > 15) {
+    }
+    else if (ime.value.length > 15) {
         tekstIme.innerHTML = "Potpis ne sme sadrzati vise od 15 karaktera";
         tekstIme.style.color = "rgba(255, 218, 205, 0.979)";
         ime.style.backgroundColor = "rgba(240, 218, 205, 0.999)";
         ime.value = "";
         greska = true;
     }
-
     if (email.value == "") {
         tekstEmail.innerHTML = "Email je obavezan za unos";
         tekstEmail.style.color = "rgba(255, 218, 205, 0.979)";
         email.style.backgroundColor = "rgba(240, 218, 205, 0.999)";
         greska = true;
-    } else if (!proveraEmaila(email.value)) {
+    } 
+    else if (!proveraEmaila(email.value)) {
         tekstEmail.innerHTML = "Email adresa nije pravilno uneta";
         tekstEmail.style.color = "rgba(255, 218, 205, 0.979)";
         email.style.backgroundColor = "rgba(240, 218, 205, 0.999)";
         greska = true;
     }
-
     if (!greska) {
         ime.value = "";
         email.value = "";
         misljenje.value = " ";
-        alert("Izvini, ova opcija nije aktivna jer je ovo ispitni rad");
+        alert("Izvini, ova opcija nije aktivna jer ovo je ispitni rad");
         restartForme();
     }
 }
-
 function proveraEmaila(tekst) {
-
     var postoji = false;
 
     for (let i = 0; i < tekst.length; i++) {
@@ -87,7 +84,6 @@ function proveraEmaila(tekst) {
     }
     return postoji;
 }
-
 function restartForme() {
     ime.style.backgroundColor = "rgba(250, 250, 250, 0.990)";
     tekstIme.innerHTML = "Unesi ime i prezime:";
@@ -100,15 +96,6 @@ function restartForme() {
     misljenje.style.backgroundColor = "rgba(250, 250, 250, 0.990)";
 }
 
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
-}
-
 const mobmeniToggler = document.querySelector(".mobmeni-toggler");
 const mobmeniMenu = document.querySelector(".mobmeni ul");
 const mobmeniLinks = document.querySelectorAll(".mobmeni a")
@@ -119,11 +106,9 @@ function mobmeniTogglerClick() {
     mobmeniToggler.classList.toggle("open-mobmeni-toggler");
     mobmeniMenu.classList.toggle("open");
 }
-
 for (let i = 0; i < mobmeniLinks.length; i++) {
     mobmeniLinks[i].addEventListener("click", mobmeniLinkClick);
 }
-
 function mobmeniLinkClick(event) {
     smoothScroll(event) //call the smoothScroll
     if (mobmeniMenu.classList.contains("open")) { //close navbarMenu in smaller screens
@@ -139,7 +124,7 @@ function smoothScroll(event) {
     let start = null;
     window.requestAnimationFrame(step);
 
-    function step(timestamp) {
+function step(timestamp) {
         if (!start) start = timestamp;
         const progress = timestamp - start;
         window.scrollTo(0, linear(progress, startPosition, distance, duration));
