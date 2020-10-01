@@ -5,23 +5,7 @@
     section {
         overflow: scroll;
     }
-    /* .razmak {
-        height: 37em;
-    }
-    body {
-        background-position: -30em 0em ;
-        background-size: 115%;
-    } */
 }
-/* @media only screen and (max-width: 9200px) {
-    .razmak {
-        height: 32em;
-    }
-    body {
-        background-position: -30em -5em ;
-        background-size: 117%;
-    }
-} */
 @media only screen and (max-width: 8200px) {
     * {
         font-size: 84px;
@@ -31,13 +15,6 @@
     * {
         font-size: 75px;
     }
-        /* .razmak {
-        height: 34em;
-    }
-    body {
-        background-position: -20em -5em ;
-        background-size: 125%;
-    } */
 }
 @media only screen and (max-width: 6000px) {
     * {
@@ -91,7 +68,6 @@
         background-position: -14em -5em ;
         background-size: 107%;
     }
-
 }
 @media only screen and (max-width: 1550px) {
     * {
@@ -110,9 +86,6 @@
         background-position: -11em -5em ;
         background-size: 115%;
     }
-    /* .razmak {
-        height: 26em;
-    } */
 }
 @media only screen and (max-width: 1260px) {
     *  {
@@ -122,9 +95,6 @@
         background-position: -10em -5em ;
         background-size: 120%;
     }
-    /* .razmak {
-        height: 26.5em;
-    } */
 }
 @media only screen and (max-width: 1110px) {
     *  {
@@ -157,7 +127,6 @@
     .meni li {
         padding-right: 0.8em;
     }
-
     article {
         line-height: 0.9em;
     }
@@ -252,13 +221,13 @@
         padding: 0em;
     }
 }
-    @media  (max-width: 800px) {
-        * {
-            font-size: 9px;
-        }
-        body {
-            background-position: -75em -25em ;
-            background-size: 200%;
+@media  (max-width: 800px) {
+    * {
+        font-size: 9px;
+    }
+    body {
+        background-position: -75em -25em ;
+        background-size: 200%;
     }
         .razmak {
             height: 40em;
@@ -276,8 +245,8 @@
         font-size: 10px;
     }
     body {
-         background-position: -60em -18em ;
-         background-size: 230%;
+        background-position: -60em -18em ;
+        background-size: 230%;
     }
     .razmak {
         height: 40em;
