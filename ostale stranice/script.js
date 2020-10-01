@@ -135,8 +135,6 @@ function step(timestamp) {
     };
 }
 
-const meni = document.querySelector(".meni");
-const meniMenu = document.querySelector(".meni ul");
 const meniLinks = document.querySelectorAll(".meni a")
 
 for (let i = 0; i < meniLinks.length; i++) {
