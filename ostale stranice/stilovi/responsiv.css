@@ -64,7 +64,7 @@
     * {
         font-size: 18px;
     }
-        body {
+    body {
         background-position: -14em -5em ;
         background-size: 107%;
     }
@@ -73,7 +73,7 @@
     * {
         font-size: 17px;
     }
-        body {
+    body {
         background-position: -12em -5em ;
         background-size: 110%;
     }
@@ -192,7 +192,7 @@
     .razmak {
         height: 38em;
     }
-        .meni li {
+    .meni li {
         padding-right: 0.1em;
         font-size: 0.9;
         font-weight: lighter;
@@ -204,11 +204,11 @@
     }
 }
 @media  (max-width: 840px) {
-        body {
-            background-position: -65em -20em ;
-            background-size: 190%;
+    body {
+        background-position: -65em -20em ;
+        background-size: 190%;
     }
-        .razmak {
+    .razmak {
             height: 38em;
     }
     .meni li {
@@ -229,13 +229,13 @@
         background-position: -75em -25em ;
         background-size: 200%;
     }
-        .razmak {
+    .razmak {
             height: 40em;
     }
-        .meni li {
+    .meni li {
         font-size: 0.3em;
     }
-        .meni li button {
+    .meni li button {
         font-size: 0.4em;
         border-radius: 0em 0em 0em 7.5em;
     }
@@ -348,14 +348,22 @@
         transform: translateY(-3px) rotate(-45deg);
         }
     .meni,
-    #desavase aside {
+    .kontejner aside {
         display: none;
     }
     article {
         line-height: 0.7em;
     }
     .galerija-slike {
-    grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+    .snimak {
+    flex-direction: column;
+    } 
+    .prikazi-tekst,
+    .vrati-sliku {
+        margin: 0.3em auto;
+        max-width: 20em;
     }
 }
 @media (max-width: 650px) {
@@ -417,12 +425,27 @@
     .razmak {
         height: 34.5em;
     }
-    main h1 {
+    h1 {
         padding-left: 0.3em;
         padding-top: 0.2em;
         text-shadow: 4px 2px 3px gray;
+    }
+    .home h2 {
+        padding-left: 3em;
+    }
+    .savet p.prst {
+    padding-left: 0.6em;
+    padding-right: 0.4em;
+    }
 }
-    .home main h2 {
-    padding-left: 3em;
+@media (max-width: 360px) {
+    .tekst-na-slici {
+        font-weight: 300;
+        justify-content: left;
+        padding-left: 4em;
+        padding-top: 5.5em;
+    } 
+    .tekst-na-slici:hover{
+        font-weight: 300;
     }
 }

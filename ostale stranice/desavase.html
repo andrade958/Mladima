@@ -4,54 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DEŠAVA SE</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="responsiv.css">
+    <link rel="stylesheet" href="stilovi/style.css">
+    <link rel="stylesheet" href="stilovi/responsiv.css">
+    <script src="skripte/jqwery-v3.5.1.js"></script>
 </head>
 <body>
 <div class="kontejner">
-<section class="margina desavase" id="desavase">
-    <main>
+    <section class="margina desavase" id="desavase">
         <h2>DEŠAVA SE</h2>
         <a id="nazad" href="../index.html"> <-- </a>
         <div class="snimak">
-            <audio controls>
+            <audio controls title="Recital sa koncerta D. Stojnića u Beogradu 2001.">
             <!-- <source src="horse.ogg" type="audio/ogg"> -->
-            <source src="../snimci/dogadjase.m4a" type="audio/mpeg"> Your browser does not support the audio element
-            </audio><br>
-       <span class="izvor">Recital sa koncerta D. Stojnića u Beogradu 2001.</span></div>
-        <div><p>Mišljenja sam da se sa više dece izbegavaju ovakve i slične situacije - dete je pošteđeno pretererane
-           brige roditelja, nesputanije grabi kroz život, brže sazreva i osamostaljuje se, a roditelji opuštenije 
-           doživljavaju roditeljstvo, jednom rečju: svi još više uživaju. 
-        </p>
-        <div class="prazan-prostor">&nbsp;</div>
-        <p>I na kraju, još jednom, najvažnije je:</p>
-        <ul>
-            <li><p><span>Da se molite Bogu</span> (podrazumeva da težiš da postaneš Čovek);</p></li>
-            <li><p><span>Da formirate i sačuvate porodicu</span> (bolje sa više dece);</p></li>
-            <li><p><span>Da istrajavate </span>(seti se: penjati se može samo uz strminu, a bez problema se ide nizbrdo).</p></li>
-        </ul>
-        <p>Bog vas blagoslovio!</p></div>
-    </main> 
-            <!-- <div class="prazan-prostor">&nbsp;</div> -->
-    <aside class="komentar">            <!-- PROVERI STA TREBA UPISATI U ACTION - NPR MEJL -->
-        <form action="" method="POST">
+                <source src="../snimci/dogadjase.m4a" type="audio/mpeg"> Your browser does not support the audio element
+            </audio>
+            <div>
+            <button class="prikazi-tekst" type="button">PRIKAŽI TEKST</button>
+            <!-- <div>&nbsp;</div> -->
+            <button class="vrati-sliku" type="button">VRATI SLIKU</button>
+            </div>
+
+        </div>
+        <div class="zamena-tekst">
+            <div>
+                <p>Mišljenja sam da se sa više dece izbegavaju ovakve i slične situacije - dete je pošteđeno pretererane
+                 brige roditelja, nesputanije grabi kroz život, brže sazreva i osamostaljuje se, a roditelji opuštenije 
+                 doživljavaju roditeljstvo. tako da svi, još više UŽIVAJU.</p>
+                <div class="prazan-prostor">&nbsp;</div>
+                <p>I na kraju, još jednom, najvažnije je:</p>
+                <ul>
+                    <li><p><span>Da se molite Bogu</span> (podrazumeva da težiš da postaneš Čovek);</p></li>
+                    <li><p><span>Da formirate i sačuvate porodicu</span> (bolje sa više dece);</p></li>
+                    <li><p><span>Da istrajavate </span>(seti se: penjati se može samo uz strminu, a bez problema se ide nizbrdo).</p></li>
+                </ul>
+                <br>
+                <p>Bog vas blagoslovio!</p>
+            </div>
+            <footer><p> Zahvaljujem se G. Šović Marku na prenesenom znanju iz oblasti Web programairanja
+                i dizajna, zahvaljujući kome sam uspela da iznjedrim svoju priču uz pomoć moderne tehnologije.</p></footer>
+            <footer><p>Rad posvećujem sinu, snajki, i unuku, čije rođenje je bilo
+                inicijalna kapisla za odluku da tema, mog prvog sajta, bude baš ova.</p></footer>
+            <footer><p>Autor: Đurđina Andrić, septembar 2020.</p></footer>
+        </div>
+        <div class="zamena-slika"><img src="../slike/musav.jpg" alt=""></div>
+    </section>
+    <aside class="komentar">
+        <form action="" method="POST" name="registracija">
             <label id="tekstIme" for="ime">Unesi ime i prezime:</label>>
             <input onchange="restartForme()" maxlength="30" type="text" name="ime" id="ime">
             <label id="tekstEmail" for="email">Unesi e-mail adresu:</label>
-            <input onchange="restartForme()" maxlength="25" type="email" id="email">
+            <input onchange="restartForme()" maxlength="25" type="email" id="email" name="email">
             <textarea onchange="restartForme()" id="misljenje" placeholder="Ukoliko želiš, registruj se gore, pa mi ovde upiši i pošalji Tvoje mišljenje ili komentar o večnoj dilemi: 
-Kojim putem? 
-H V A L A!" name="misljenje" cols="20" rows="20" maxlength="400"></textarea>
-            <button id="posalji" onclick="potvrda()" type="button" >POŠALJI</button>
+    Kojim putem? 
+    H V A L A!" name="misljenje" cols="20" rows="20" maxlength="400"></textarea>
+            <button id="posalji" onclick="potvrda()" type="button">POŠALJI</button>
         </form>
     </aside>
-    <footer><p> Zahvaljujem se G. Šović Marku na prenesenom znanju iz oblasti Web programairanja
-            i dizajna, zahvaljujući kome sam uspela da iznjedrim svoju priču uz pomoć moderne tehnologije.</p></footer>
-    <footer><p>Rad posvećujem sinu, snajki, i unuku, čije rođenje je bilo
-            inicijalna kapisla za odluku da tema, mog prvog sajta, bude baš ova.</p></footer>
-    <footer><p>Autor: Đurđina Andrić, septembar 2020.</p></footer>
-    </div>
-</section>
+</div>
 </body>
-<script src="script.js"></script>
+<script src="skripte/drugiScript.js"></script>
+<script src="skripte/treciScript.js"></script>
 </html>

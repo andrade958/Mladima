@@ -16,10 +16,10 @@ a:hover {
     transition: all 0.2s;
 }
 body {
-    height: 100%;
+    height: 100vh;
     margin: 0px;
     background-color: rgba(250, 250, 250, 0.990);
-    background-image: url("../slike/zalakunoc.jpg");
+    background-image: url("../../slike/zalakunoc.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -34,7 +34,7 @@ body {
     top: 0px;
     left: 0px;
     z-index: 10;    /* ako nema z index  ne vidi se  */
-    }
+}
 .mobmeni ul {
     list-style-type: none;
 }
@@ -115,17 +115,16 @@ section div p {
 section.margina {
     margin-top: 0px;
 }
-.home main {
+.home {
     position: relative;
-    width: 100%;
     height: 100vh;
-    background-image: url(../slike/kuda.jpg);
+    background-image: url(../../slike/kuda.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     color: rgba(139, 0, 139, 0.974);
     background-position: center;
 }
-main h1 {
+h1 {
     display: inline-block;
     padding-left: 1em;
     padding-top: 0.7em;
@@ -133,7 +132,7 @@ main h1 {
     text-shadow: 4px 2px 3px gray;
     margin: 0.6em 1em 0em 0.8em;
 }
-.home main h2 {
+.home h2 {
     padding-left: 4.82em;
     font-size: 1.9rem ;
 }
@@ -157,50 +156,52 @@ main h1 {
     transition: all 1s;
 }
 .savet h2 {
-    margin-bottom: 0px;
+    margin-top: 0.8em;
+    margin-bottom: 0.6em;
     padding-top: 0.15em;
     padding-left: 1.7em;
-    word-spacing: 0.25em;
+    letter-spacing: 0.07em;
 } 
 .savet p {
-    margin-bottom: 0px;
+    margin-top: 0.1em;
+    margin-bottom: 0.6em;
     padding-left: 2.8em;
     padding-right: 2.8em;
     word-spacing: 0.2em;
 } 
 .savet .slika {
     text-align: center;
-    margin-top: 0.5em;
+    margin-top: 0.7em;
 }
-form div {
+.savet form div {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
-button#klikmi {
-    margin: 0.4em auto;
+.savet form button {
+    margin: 0.3em auto 0.5em;
     padding: 0em 0.5em 0.2em;
     display: block;
     background-color: rgba(250, 250, 250, 0.990);
     color: rgba(139, 0, 139, 0.974);
     font-style: italic;
     font-size: 1.2rem;
-    font-weight: 600;
-    letter-spacing: 0.09rem;
+    font-weight: 700;
+    letter-spacing: 0.12rem;
     transition: all 0.5s;
     border-radius: 0.5rem;
     cursor: pointer;
 }
-button#klikmi:hover {
+.savet form button:hover {
     background-color:  rgba(255, 218, 205, 0.979);
     color: rgba(139, 0, 139, 0.974);
-    transform: scale(1.05);
+    transform: scale(1.1);
     box-shadow: 8px 8px 7px 1px rgba(90,29,64,0.75);;
     -webkit-box-shadow: 8px 8px 7px 1px rgba(90, 29, 64, 0.75);
     -moz-box-shadow: 8px 8px 7px 1px rgba(90,29,64,0.75);
 }
-input#vreme {
+.savet input {
     padding: 0.6em 0em 0.8em;
     font-size: 1.2em;
     font-weight: 600;
@@ -212,26 +213,26 @@ input#vreme {
     border-radius: 0.5rem;
     width: 14%;
     height: 1.62rem;
-    transition: all 2.5s;
+    transition: all 1.2s;
 }
 .savet p.prst,
 .savet p.celo {
-    margin-bottom: 1.2em;
-    letter-spacing: 0.05rem;
     font-size: 1.1em;
     font-weight: 600;
 }
 .savet p.prst {
-    padding-left: 1em;
-    padding-right: 1.2em;
+    font-size: 1.28em;
+    letter-spacing: 0.147rem;
+    padding-left: 1.2em;
+    padding-right: 1em;
 }
 .savet p.celo {
     border-radius: 0.5rem;
     color: rgba(250, 250, 250, 0.990);
-    padding: 0.05em 0.6em 0.8em 0.6em;
+    padding: 0.05em 0.4em 0.1em;
     background-color:  rgba(255, 218, 205, 0.979);
-    height: 1.73rem;
-    transition: all 2.5s;
+    height: 1.6em;
+    transition: all 1.2s;
 }
 .put-radosti {
     height: 100vh;
@@ -249,6 +250,7 @@ input#vreme {
     position: relative;
 }
 .slika-pozadina {
+    display: flex;
     margin: 0em 0em 0.7em 0em;
     position: relative;
     width: 97%;
@@ -260,7 +262,7 @@ input#vreme {
 .tekst-na-slici {
     position: absolute;
     top: 0px;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 600;
     display: flex;
     flex-direction: column;
@@ -279,41 +281,41 @@ input#vreme {
 }
 .slike-zatamljene {
     transition: 0.5s;
-    filter: brightness(60%);
+    filter: brightness(55%);
 }
 .za-laku-noc {
     background-color: rgba(70, 70, 70, 0.1);
     height: 100vh;
 }
 .razmak {
-    height: 26.5em;
+    height: 28em;
 }
 .za-laku-noc audio {
     width:65%;
-    padding-left: 6.5em;
+    padding-left: 5.4em;
     border: 0;
 }
 .za-laku-noc h2 {
     color: rgba(250, 250, 250, 0.990);
-    padding-left: 3.1em;
+    padding-left: 2.5em;
     padding-top: 1em;
 }
 .za-laku-noc p {
     color: rgba(250, 250, 250, 0.990);
-    padding-left: 5em;
+    padding-left: 4.1em;
 }
 .neko-nauci {
     height: 100vh;
 }
 .neko-nauci h2 {
-    padding-left: 1.6em;
+    padding-top: 0.26em;
+    padding-left: 1.78em;
 }
 .neko-nauci p {
-    padding-left: 2.8em;
+    font-style: normal;
+    font-weight: 500;
+    padding-left: 2.99em;
     padding-right: 2.8em;
-}
-div#nekoprored {
-    line-height: 2em;
 }
 .neko-nauci a {
     margin-top: 0.5em;
@@ -341,7 +343,7 @@ article {
     padding-left: 1.4%;
     overflow: scroll;
     width: 89.6%;
-    height: 59vh;
+    height: 54vh;
     background-color: rgba(139, 0, 139, 0.974);
     color: rgba(250, 250, 250, 0.990);
     text-align: left;
@@ -354,18 +356,22 @@ article h4 {
     font-size: 1.5rem;
     font-style: italic;
 }
-article p {
+.neko-nauci article p {
     margin-top: 1em;
     text-indent: 27%;
+    font-size: 1.2rem;
+    font-weight: 500;
     font-style: italic;
 }
 article header h5 {
     margin: 1.6em 0em 0em 1em;
     font-size: 1.1rem;
+    font-style: italic;
 }
 article header h6 {
     margin: 0em 0em 0em 1.4em;
     font-size: 0.8rem;
+    font-style: italic;
 }
 .desavase {
     position: relative;
@@ -375,12 +381,11 @@ span {
     font-size: 1.3rem;
     font-style: italic;
     font-weight: 700;
-
 }
 .desavase a {
     position: absolute;
-    top: 2.87em;
-    right: 2.93em;
+    top: 2.5em;
+    right: 2.8em;
     width: 1.5em;
     height: 1.5em;
     color: rgba(250, 250, 250, 0.990);
@@ -391,41 +396,29 @@ span {
     transition: all 0.2s;
 }
 .desavase a:hover {
-        background-color:  rgba(255, 218, 205, 0.979);
-        color: rgba(139, 0, 139, 0.974);
+    background-color:  rgba(255, 218, 205, 0.979);
+    color: rgba(139, 0, 139, 0.974);
 }
 .desavase h2{
-    padding: 0.64em 0em 0.6em 2.1em;
+    padding: 0.6em 0em 0.64em 2.1em;
     letter-spacing: 0.18em;
 }
 .desavase p {
-    padding: 0.07em 3.1em 0em 3.5em;
+    padding: 0em 3.1em 0em 3.5em;
     font-weight: 600;
-}
-.izvor {
-    margin-left: 3.3em;
-    padding: 0em 3.4em 0em 3.25em; 
-    font-size: 0.7em; 
-    font-style: italic;
-    font-weight: normal;
 }
 .desavase li {
     list-style-type: circle;
-    text-indent: 6em;
-    font-size: 1.3rem;
-    font-style: italic;
-    font-weight: 600;
+    text-indent: 7em;
 }
 .desavase li p {
-    padding: 0.07em 3.1em 0em 0em;
+    margin-left:  -3.3em;
+    padding-left: 3.7em;
     margin-block-start: 0em;
     margin-block-end: 0em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px
 }
 .desavase audio {
-    margin-left: 4.3em;
-    width: 50%;
+    width: 65%;
 }
 aside.komentar {
     position: fixed;
@@ -451,6 +444,7 @@ label {
 .komentar input,
 textarea {
     display: block;
+    padding: 0.3em 0.5em 0.5em;
     background-color: rgba(250, 250, 250, 0.990);
     font-size: 1.1rem;
     border-radius: 0.5em;
@@ -472,8 +466,7 @@ textarea {
     text-align: center;
     vertical-align: middle;
 }
-/* vidi KAKO DA STAVIS PRIJAVU PREKO DRUSTVENIH MREZA */
-.komentar button#posalji {
+.komentar form button {
     margin-top: 1em;
     width: 100%;
     height: 2rem;
@@ -487,26 +480,65 @@ textarea {
     transition: color 0.3s;
     cursor: pointer;
 }
-.komentar button#posalji:hover {
+.komentar form button:hover {
     background-color:  rgba(212, 206, 204, 0.747);
     color: rgba(250, 250, 250, 0.990);
 }
 footer {
     position: relative;
     top: 0.7em;
-    width: 88.8%;
-    margin: auto;
+    width: 88.2%;
+    margin: 0.2em auto;
     background-color: rgba(139, 0, 139, 0.974);
     color: rgba(250, 250, 250, 0.990);
-    text-align: left;
 }
-footer p {
-    font-size: 0.75rem;
+.desavase footer p {
+    font-size: 0.8rem;
     font-style: italic;
-    font-weight: 700;
-    text-align: justify;
+    font-weight: 600;
+    padding: 0.1em 1em 0.3em;
 }
 .prazan-prostor {
-    margin-bottom: 3em;
+    margin-bottom: 1.5em;
 }
-
+.zamena-tekst {
+    margin-top: 2.2em;
+    display: none;
+}
+.prikazi {
+    display: block;
+}
+.zamena-slika img {
+    display: flex;
+    width: 94.7%;
+    height: 65.5vh;
+    object-fit: cover;
+    padding-left: 4.4em;
+}
+.kvit {
+    display: none;
+}
+.snimak {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0em 4em 1.1em 4.44em;
+}
+.prikazi-tekst,
+.vrati-sliku {
+    padding: 0em 0.5em 0.17em;
+    background-color: rgba(139, 0, 139, 0.932);
+    color: rgba(255, 255, 255, 0.990);
+    max-width: 15em;
+    font-size: 1.2em;
+    font-weight: 500;
+    font-stretch: ultra-expanded;
+    border-radius: 0.5em;
+    height: 1.8em;
+    cursor: pointer;
+}
+.prikazi-tekst:hover, 
+.vrati-sliku:hover {
+    background-color:  rgba(255, 218, 205, 0.979);
+    color: rgba(139, 0, 139, 0.974);
+}

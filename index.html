@@ -7,10 +7,23 @@
     <meta name="language" content="Serbian, Srpski">
     <meta name="description" content="Životno iskustvo pretočeno u savet mladima za večnu dilemu: Kojim putem?">
     <meta name="keywords" content="savet, mladi, put, radost, sreća">
-    <link rel="stylesheet" href="ostale stranice/style.css" type="text/css">
-    <link rel="stylesheet" href="ostale stranice/responsiv.css">
+    <link rel="stylesheet" href="ostale stranice/stilovi/style.css" type="text/css">
+    <link rel="stylesheet" href="ostale stranice/stilovi/responsiv.css">
+        <script src="ostale stranice/skripte/jqwery-v3.5.1.js"></script>
+
 </head>
 <body>
+    <nav class="meni">
+        <ul>
+            <li><a href="#home">POČETNA</a></li>
+            <li><a href="#o-meni">O MENI</li>
+            <li><a href="#savet">SAVET</a></li>
+            <li><a href="#put-radosti"><button>PUT RADOSTI<br> I SREĆE </button></a></li>
+            <li><a href="#za-laku-noc">ZA LAKU NOĆ</a></li>
+            <li><a href="#neko-nauci">NEKO NAUČI</a></li>
+            <li><a href="ostale stranice/desavase.html">DEŠAVA SE</a></li>
+        </ul>
+    </nav>
     <div class="mobmeni">
         <ul>
             <li><a href="#home">POČETNA</a></li>
@@ -27,21 +40,8 @@
     </div>
 <div class="kontejner">
     <section class="margina home" id="home">
-        <main>
             <h1>SAVET MLADIMA</h1> <br>
             <h2>Kojim putem?</h2>
-        </main>
-        <nav class="meni">
-            <ul>
-                <li><a href="#home">POČETNA</a></li>
-                <li><a href="#o-meni">O MENI</li>
-                <li><a href="#savet">SAVET</a></li>
-                <li><a href="#put-radosti"><button>PUT RADOSTI<br> I SREĆE </button></a></li>
-                <li><a href="#za-laku-noc">ZA LAKU NOĆ</a></li>
-                <li><a href="#neko-nauci">NEKO NAUČI</a></li>
-                <li><a href="ostale stranice/desavase.html">DEŠAVA SE</a></li>
-            </ul>
-        </nav>
     </section>        
     <section class="margina o-meni" id="o-meni">
         <div>
@@ -65,22 +65,24 @@
             <p>Šta je karijera? Za mene - samo uspeh na globalnom nivou 
                 u onome čime se baviš. Ako si genije(alka), poput Nikole Tesle, i 
                 možeš lično, direktno da doprineseš boljitku na Planeti, svaka čast –
-                NAPRED, sve svoje vreme i energiju usmeri samo na 
+                NAPRED! Sve svoje vreme i energiju usmeri samo na 
                 profesiju. U suprotnom, završi fakultet, doktoriraj, osnuj firmu...  
                 al' znaj: Tvoja "karijera" je <span>PORODICA</span>, a sva
                 zvanja, visoki položaji... trebaju biti samo začini za nju. </p>
+            <div class="slika"><img width="32.5%" src="slike/porodica.jfif" alt=""></div>
             <p><span>Najteži i najlepši zadatak u životu je svetu podariti čoveka</span>, u punom smislu te reči.
                 Zato treba ljubavi, energije, vremena… kako bi konačno prestalo da važi, ono što pametan
                 čovek reče, da su ljudi jedina vrsta koja odbija da bude ono što joj je Priroda namenila.</p>
-            <div class="slika"><img width="32.5%" src="slike/porodica.jfif" alt=""></div>
-            <p style="margin-top: 0px;">Galop na pogrešnom putu – ima li smisla? </p>
-        <form name="vremeForma">
-            <button name="setTimeout" id=klikmi onclick="Vreme()" type="button"> KLIKNI ME! </button>
-           <div><input id="vreme" type="text" name="cifre" size="12">
-                <p class="prst"> Vreme “leti.” </p>
-                <p class="celo"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-            </div>
-        </form>
+            <span style="margin-left: 2.7em;">Galop na pogrešnom putu – ima li smisla? </span>
+        </div>
+            <form name="vremeForma">
+                <button name="setTimeout" id=klikmi onclick="Vreme()" type="button"> KLIKNI ME! </button>
+                <div>
+                    <input id="vreme" type="text" name="cifre" size="12">
+                    <p class="prst"> Vreme “leti”, </p>
+                    <p class="celo"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                </div>
+            </form>
     </section>
     <section class="margina put-radosti" id="put-radosti">
         <h2>PUT RADOSTI I SREĆE</h2>
@@ -117,22 +119,22 @@
             <p>Za laku noć deco, uz obavezan „Oče naš“, odrecitujte im ponekad i ovo:</p>
             <div class="razmak"></div>
         
-            <audio controls>
+            <audio controls title="Recital sa koncerta D. Stojnića u Beogradu 2001.">
             <!-- <source src="horse.ogg" type="audio/ogg"> -->
             <source autoplay src="snimci/zalakunoc.m4a" type="audio/mpeg">
              Your browser does not support the audio element.
             </audio>
         </div>
-            <p class="izvor" style="padding-left: 6.2em;" >Recital sa koncerta Dragana Stojnića u Beogradu 2001. godine</p>
+            <!-- <p class="izvor" style="padding-left: 6.2em;" >Recital sa koncerta Dragana Stojnića u Beogradu 2001. godine</p> -->
     </section>
     <section class="neko-nauci" id="neko-nauci">
         <div>
             <h2>NEKO NAUČI</h2>
-            <div id="neko-prored">
             <p>NIKAD SE NE BOJTE SLEDEĆEG KORAKA, ma koliko vam delovao težak i bolan. DOBRO, neophodno za pomak
-            napred, ČUČI baš u takvim koracima. TRAŽITE GA, jer zlo je samo privid, kao i materija - miš od koga ne vidite 
-            slona.</p>
-            <p> I ISTRAJAVAJTE!</p></div>
+                napred, ČUČI baš u takvim koracima. TRAŽITE GA, jer zlo je samo privid, kao i materija - miš od koga ne vidite 
+                slona.</p>
+            <p> I ISTRAJAVAJTE!</p>
+        </div>
         <article> 
         <header title="Zahvaljujem se Gospođi Likić Nadi i Američkom kutku u NS 
                        jer bez njih ne bi bilo ni ove pesme">
@@ -186,5 +188,6 @@
     </section>
 </div>
 </body>
-    <script src="ostale stranice/script.js"></script>
+    <script src="ostale stranice/skripte/script.js"></script>
+    <script src="ostale stranice/skripte/treciScript.js"></script>
 </html>
