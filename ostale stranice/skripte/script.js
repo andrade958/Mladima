@@ -11,17 +11,26 @@ function Vreme() {{
         }
     document.getElementById("savet").style.backgroundColor = "rgba(250, 250, 250, 0.990)";
     document.getElementById("savet").style.color = "rgba(139, 0, 139, 0.974)";
-        var vreme = document.vremeForma.setTimeout
-    vreme.style.backgroundColor = "rgba(250, 250, 250, 0.990)";
-    vreme.style.color = "rgba(250, 250, 250, 0.990)";
-    vreme.style.border = "rgba(250, 250, 250, 0.990)";
-        var cifra = document.vremeForma.cifre
-    cifra.style.backgroundColor = "rgba(139, 0, 139, 0.974)";
-    cifra.style.fontSize = "1.5em";
-        var celo = document.querySelector(".celo")
-    celo.innerHTML = "PRST NA ČELO!";
-    celo.style.backgroundColor = "rgba(139, 0, 139, 0.974)";
-    celo.style.fontSize = "1.4em";
+    document.getElementById("klikmi").style.backgroundColor = "rgba(250, 250, 250, 0.990)";
+    document.getElementById("klikmi").style.color = "rgba(250, 250, 250, 0.990)";
+    document.getElementById("klikmi").style.border = "rgba(250, 250, 250, 0.990)";
+    document.getElementById("vreme").style.backgroundColor = "rgba(139, 0, 139, 0.974)";
+    document.getElementsByClassName("celo")[0].innerHTML = "PRST NA ČELO!";
+    document.getElementsByClassName("celo")[0].style.backgroundColor = "rgba(139, 0, 139, 0.974)";
+
+    // document.getElementById("savet").style.backgroundColor = "rgba(250, 250, 250, 0.990)";
+    // document.getElementById("savet").style.color = "rgba(139, 0, 139, 0.974)";
+    //     var vreme = document.vremeForma.setTimeout
+    // vreme.style.backgroundColor = "rgba(250, 250, 250, 0.990)";
+    // vreme.style.color = "rgba(250, 250, 250, 0.990)";
+    // vreme.style.border = "rgba(250, 250, 250, 0.990)";
+    //     var cifra = document.vremeForma.cifre
+    // cifra.style.backgroundColor = "rgba(139, 0, 139, 0.974)";
+    // cifra.style.fontSize = "1.5em";
+    //     var celo = document.querySelector(".celo")
+    // celo.innerHTML = "PRST NA ČELO!";
+    // celo.style.backgroundColor = "rgba(139, 0, 139, 0.974)";
+    // celo.style.fontSize = "1.4em";
 }
 
 const galerijaSlike = document.querySelectorAll('.galerija-slika');
