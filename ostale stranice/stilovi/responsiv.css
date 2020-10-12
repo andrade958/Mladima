@@ -291,16 +291,16 @@
         margin-bottom: 1em;
         padding: 0em 0.5em 0em 0.7em;
         border-radius: 0em 0em 0em 3.25em;
-        font-size: 2rem;
-        font-weight: 700;
+        font-size: 1.7rem;
+        font-weight: 500;
 }
     .mobmeni li button:hover {
-        border-radius: 0em;
+        border-radius: 1em;
         background-color:  rgba(139, 0, 139, 0.974);
         color: rgba(250, 250, 250, 0.990);
         cursor: pointer;
-        transform: scale(1.2);
-        transition: all 0.5s;
+        transform: scale(1);
+        transition: all 0.2s;
         -webkit-box-shadow: 10px 10px 9px 1px rgba(90, 29, 64, 0.75);
         -moz-box-shadow: 10px 10px 9px 1px rgba(90,29,64,0.75);
         box-shadow: 10px 10px 9px 1px rgba(90,29,64,0.75);;
@@ -371,6 +371,9 @@
          background-position: -55em -10em ;
          background-size: 225%;
     }
+    .o-meni p {
+        line-height: 1.65em;
+    }
     .razmak {
         height: 40em;
     }
@@ -380,7 +383,10 @@
 }
 @media (max-width: 570px) {
     body {
-         background-size: 250%;
+        background-size: 250%;
+    }
+    .o-meni p {
+        line-height: 1.55em;
     }
     .razmak {
         height: 37em;
@@ -391,6 +397,9 @@
         background-position: -40em -5em;
          background-size: 270%;
             }
+    .o-meni p {
+            line-height: 1.2em;
+    }
     .razmak {
         height: 34em;
     }
@@ -408,7 +417,10 @@
     body {
         background-position: -50em -6em;
          background-size: 310%;
-            }
+    }
+    .o-meni p {
+        line-height: 1.1em;
+    }
     .tekst na slici {
         font-size: 0.8em;
         font-weight: 400;
@@ -434,16 +446,19 @@
         padding-left: 3em;
     }
     .savet p.prst {
-    padding-left: 0.6em;
-    padding-right: 0.4em;
+        padding-left: 0.6em;
+        padding-right: 0.4em;
     }
 }
 @media (max-width: 360px) {
+    .o-meni p {
+        line-height: 1em;
+    }
     .tekst-na-slici {
+        flex-direction: row;
         font-weight: 300;
         justify-content: left;
         padding-left: 4em;
-        padding-top: 5.5em;
     } 
     .tekst-na-slici:hover{
         font-weight: 300;

@@ -7,7 +7,7 @@ var tekstEmail = document.getElementById("tekstEmail");
 function potvrda() {
     var greska = false;
     if (ime.value == "" || ime.value.length < 8 || ime.value.indexOf(" ") == -1) {
-        tekstIme.innerHTML = "Ovo polje je obavezno - PROVERI!";
+        tekstIme.innerHTML = "PROVERI! <br> Ovo polje je obavezno!";
         tekstIme.style.color = "rgba(255, 218, 205, 0.979)";
         ime.style.backgroundColor = "rgba(240, 218, 205, 0.999)";
         greska = true;
@@ -20,7 +20,7 @@ function potvrda() {
         greska = true;
     }
     if (email.value.length < 10 || email.value.lastIndexOf(".") < 9) {
-        tekstEmail.innerHTML = "Ovo polje je obavezno - PROVERI!";
+        tekstEmail.innerHTML = "PROVERI! <br> Ovo polje je obavezno!";
         tekstEmail.style.color = "rgba(255, 218, 205, 0.979)";
         email.style.backgroundColor = "rgba(240, 218, 205, 0.999)";
         greska = true;

@@ -1,5 +1,5 @@
 * {
-    /* outline: 1px dashed green; */
+    /* outline: 1px dashed black; */
     box-sizing: border-box;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 20px;
@@ -140,14 +140,14 @@ h1 {
     height: 100vh;
 }
 .o-meni h2 {
-    padding-top: 1.8em;
-    padding-left: 3.35em;
-    margin-bottom: 1.4em;
+    padding-top: 1.85em;
+    padding-left: 3.37em;
+    margin-bottom: 1.65em;
 }
 .o-meni p {
     display: block;
     padding: 0.22em 5.4em;
-    line-height: 1.98em;
+    line-height: 1.84em;
 }
 .savet {
     height: 100vh;
@@ -156,16 +156,16 @@ h1 {
     transition: all 1s;
 }
 .savet h2 {
-    margin-top: 0.8em;
-    margin-bottom: 0.8em;
+    margin-top: 0.88em;
+    margin-bottom: 0.77em;
     padding-top: 0.15em;
-    padding-left: 1.7em;
+    padding-left: 1.6em;
     letter-spacing: 0.07em;
 } 
 .savet p {
     margin-top: 0.1em;
-    margin-bottom: 0.6em;
-    padding-left: 2.8em;
+    margin-bottom: 0.65em;
+    padding-left: 2.7em;
     padding-right: 2.8em;
     word-spacing: 0.2em;
     line-height: 1.29em;
@@ -181,7 +181,7 @@ h1 {
     align-items: center;
 }
 .savet form button {
-    margin: 0em auto 0.7em;
+    margin: 0em auto 0.8em;
     padding: 0em 0.5em 0.2em;
     display: block;
     background-color: rgba(250, 250, 250, 0.990);
@@ -386,8 +386,8 @@ span {
 }
 .desavase a {
     position: absolute;
-    top: 2.5em;
-    right: 2.8em;
+    top: 2.25em;
+    right: 2.95em;
     width: 1.5em;
     height: 1.5em;
     color: rgba(250, 250, 250, 0.990);
@@ -402,11 +402,11 @@ span {
     color: rgba(139, 0, 139, 0.974);
 }
 .desavase h2{
-    padding: 0.6em 0em 0.64em 2.1em;
+    padding: 0.5em 0em 0.5em 2em;
     letter-spacing: 0.18em;
 }
 .desavase p {
-    padding: 0em 3.1em 0em 3.5em;
+    padding: 0em 3.1em 0em 3.46em;
     font-weight: 600;
 }
 .desavase li {
@@ -423,10 +423,10 @@ span {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0em 4em 1.1em 4.44em;
+    margin: 0em 4em 1.18em 4.3em;
 }
 .desavase audio {
-    width: 65%;
+    width: 60%;
 }
 .prikazi-tekst,
 .vrati-sliku {
@@ -434,12 +434,13 @@ span {
     background-color: rgba(139, 0, 139, 0.932);
     color: rgba(255, 255, 255, 0.990);
     max-width: 15em;
-    font-size: 1.2em;
-    font-weight: 500;
+    font-size: 1.1em;
+    font-weight: 400;
     font-stretch: ultra-expanded;
     border-radius: 0.5em;
     height: 1.8em;
     cursor: pointer;
+    letter-spacing: 0.05rem;
 }
 .prikazi-tekst:hover, 
 .vrati-sliku:hover {
@@ -451,10 +452,10 @@ span {
 }
 .zamena-slika img {
     display: flex;
-    width: 94.7%;
+    width: 94.64%;
     height: 65.5vh;
     object-fit: cover;
-    padding-left: 4.4em;
+    padding-left: 4.275em;
 }
 .zamena-tekst {
     margin-top: 2.2em;
