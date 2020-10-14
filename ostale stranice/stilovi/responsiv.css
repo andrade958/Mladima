@@ -124,9 +124,6 @@
     * {
         font-size: 13.3px;
     }
-    .meni li {
-        padding-right: 0.8em;
-    }
     article {
         line-height: 0.9em;
     }
@@ -159,11 +156,7 @@
     .razmak {
         height: 30em;
     }
-    .meni li {
-        padding-right: 0.55em;
-    }
     .meni li :hover {
-        padding: 0em;
         background-color: darkmagenta;
         color:  rgba(255, 218, 205, 0.979);
         transition: color 0.3s;
@@ -192,16 +185,6 @@
     .razmak {
         height: 38em;
     }
-    .meni li {
-        padding-right: 0.1em;
-        font-size: 0.9;
-        font-weight: lighter;
-    }
-    .meni li button {
-        font-size: 1em;
-        font-weight: 300;
-        padding: 0.1em 0.3em 0.15em;
-    }
 }
 @media  (max-width: 840px) {
     body {
@@ -210,15 +193,6 @@
     }
     .razmak {
             height: 38em;
-    }
-    .meni li {
-        font-size: 0.8em;
-        padding-right: 0.08em;
-    }
-    .meni li button {
-        font-size: 0.9em;
-        font-weight: 300;
-        padding: 0em;
     }
 }
 @media  (max-width: 800px) {
@@ -231,13 +205,6 @@
     }
     .razmak {
             height: 40em;
-    }
-    .meni li {
-        font-size: 0.3em;
-    }
-    .meni li button {
-        font-size: 0.4em;
-        border-radius: 0em 0em 0em 7.5em;
     }
 } 
 @media  (max-width: 767px)   {
@@ -358,7 +325,7 @@
         grid-template-columns: 1fr 1fr;
     }
     .snimak {
-    flex-direction: column;
+        flex-direction: column;
     } 
     .prikazi-tekst,
     .vrati-sliku {
@@ -378,7 +345,12 @@
         height: 40em;
     }
     article {
+        width: 88.8%;
+        left: 5.7%;
         line-height: 1em;
+    }
+    .zamena-slika img {
+    width: 93.64%;
     }
 }
 @media (max-width: 570px) {
@@ -391,6 +363,13 @@
     .razmak {
         height: 37em;
     }
+    article {
+        width: 87.6%;
+        left: 6.2%;
+    }
+    .zamena-slika img {
+        width: 93%;
+    }
 }
 @media (max-width: 490px) {
     body {
@@ -400,16 +379,21 @@
     .o-meni p {
             line-height: 1.2em;
     }
+    .tekst na slici {
+        font-size: 1.2em;
+    }
     .razmak {
         height: 34em;
     }
     article {
+        width: 85%;
+        left: 7.5%;
         line-height: 1.2em;
     }
-}
-    .tekst na slici {
-        font-size: 1.2em;
+    .zamena-slika img {
+        width: 91.6%;
     }
+}
 @media (max-width: 405px) {
     * {
         font-size: 9.1px;
@@ -438,19 +422,32 @@
         height: 34.5em;
     }
     h1 {
-        padding-left: 0.3em;
-        padding-top: 0.2em;
+        padding-left: 1em;
+        padding-right: 1em;
+        padding-top: 1.5em;
         text-shadow: 4px 2px 3px gray;
     }
     .home h2 {
-        padding-left: 3em;
+        padding-left: 4.4em;
     }
     .savet p.prst {
         padding-left: 0.6em;
         padding-right: 0.4em;
     }
+    .zamena-slika img {
+        width: 90.6%;
+    }
 }
 @media (max-width: 360px) {
+    h1 {
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        padding-top: 0.9em;
+    }
+    .home h2 {
+        padding-left: 3.2em;
+    }
+
     .o-meni p {
         line-height: 1em;
     }
@@ -462,5 +459,12 @@
     } 
     .tekst-na-slici:hover{
         font-weight: 300;
+    }
+    article {
+        width: 81.6%;
+        left: 9.3%;
+    }
+    .zamena-slika img {
+        width: 89.64%;
     }
 }
