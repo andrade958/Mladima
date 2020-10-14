@@ -71,6 +71,7 @@ body {
 .meni li :hover {
     padding: 0.12em 0.4em 0.2em 0.4em;
     background-color:  rgba(255, 218, 205, 0.979);
+    font-weight: 500;
     transition: all 0.2s;
 }
 .meni li button {
@@ -174,7 +175,6 @@ h1 {
     padding-left: 2.7em;
     padding-right: 2.8em;
     word-spacing: 0.2em;
-    /* line-height: 1.29em; */
 } 
 .savet .slika {
     text-align: center;
@@ -358,11 +358,11 @@ article {
     line-height: 0.17em;
 }
 article h4 {
+    font-family: 'Playfair Display', serif;
     margin-top: 2.5em;
     margin-bottom: 2.2em;
     text-align: center;
-    font-size: 1.5rem;
-    font-style: italic;
+    font-size: 1.4rem;
 }
 .neko-nauci article p {
     margin-top: 1em;
