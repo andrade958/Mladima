@@ -11,6 +11,18 @@
     <script src="skripte/treciScript.js"></script>
 </head>
 <body>
+<aside class="komentar">
+    <form action="" method="POST" name="registracija">
+        <label id="tekstIme" for="ime">Unesi ime i prezime:</label>>
+        <input onchange="restartForme()" maxlength="30" type="text" name="ime" id="ime">
+        <label id="tekstEmail" for="email">Unesi e-mail adresu:</label>
+        <input onchange="restartForme()" maxlength="25" type="email" id="email" name="email">
+        <textarea onchange="restartForme()" id="misljenje" placeholder="Ukoliko želiš, registruj se gore, pa mi ovde upiši i pošalji Tvoje mišljenje ili komentar o večitoj dilemi: 
+    Kojim putem? 
+    H V A L A!" name="misljenje" cols="20" rows="20" maxlength="400"></textarea>
+        <button id="posalji" onclick="potvrda()" type="button">POŠALJI</button>
+    </form>
+</aside>
 <div class="kontejner">
     <section class="margina desavase" id="desavase">
         <h2>DEŠAVA SE</h2>
@@ -39,7 +51,7 @@
                     <li><p><span>Da istrajavate </span>(seti se: penjati se može samo uz strminu, a bez problema se ide nizbrdo).</p></li>
                 </ul>
                 <br>
-                <p>Bog vas blagoslovio!</p>
+                <p style="text-align: center;">Bog vas blagoslovio!</p>
             </div>
             <footer><p> Zahvaljujem se G. Šović Marku na prenesenom znanju iz oblasti Web programairanja
                 i dizajna, zahvaljujući kome sam uspela da iznjedrim svoju priču uz pomoć moderne tehnologije.</p></footer>
@@ -48,18 +60,6 @@
             <footer><p>Autor: Đurđina Andrić, septembar 2020.</p></footer>
         </div>
     </section>
-    <aside class="komentar">
-        <form action="" method="POST" name="registracija">
-            <label id="tekstIme" for="ime">Unesi ime i prezime:</label>>
-            <input onchange="restartForme()" maxlength="30" type="text" name="ime" id="ime">
-            <label id="tekstEmail" for="email">Unesi e-mail adresu:</label>
-            <input onchange="restartForme()" maxlength="25" type="email" id="email" name="email">
-            <textarea onchange="restartForme()" id="misljenje" placeholder="Ukoliko želiš, registruj se gore, pa mi ovde upiši i pošalji Tvoje mišljenje ili komentar o večitoj dilemi: 
-    Kojim putem? 
-    H V A L A!" name="misljenje" cols="20" rows="20" maxlength="400"></textarea>
-            <button id="posalji" onclick="potvrda()" type="button">POŠALJI</button>
-        </form>
-    </aside>
 </div>
 </body>
 <script src="skripte/drugiScript.js"></script>
