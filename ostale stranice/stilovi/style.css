@@ -157,6 +157,11 @@ h1 {
     line-height: 1.5em;
     letter-spacing: -0.01rem;
 }
+span {
+    font-size: 1.3rem;
+    font-style: italic;
+    font-weight: 600;
+}
 .savet {
     height: 100vh;
     background-color: rgba(139, 0, 139, 0.974);
@@ -296,14 +301,6 @@ h1 {
     background-color: rgba(70, 70, 70, 0.1);
     height: 100vh;
 }
-.razmak {
-    height: 28em;
-}
-.za-laku-noc audio {
-    width:65%;
-    padding-left: 5.4em;
-    border: 0;
-}
 .za-laku-noc h2 {
     color: rgba(250, 250, 250, 0.990);
     padding-left: 2.5em;
@@ -313,6 +310,14 @@ h1 {
     color: rgba(250, 250, 250, 0.990);
     padding-left: 4.1em;
     padding-right: 4.1em;
+}
+.razmak {
+    height: 28em;
+}
+.za-laku-noc audio {
+    width:65%;
+    padding-left: 5.4em;
+    border: 0;
 }
 .neko-nauci {
     height: 100vh;
@@ -386,10 +391,9 @@ article header h6 {
     position: relative;
     height: 100vh;
 }
-span {
-    font-size: 1.3rem;
-    font-style: italic;
-    font-weight: 600;
+.desavase h2{
+    padding: 0.6em 0em 0.5em 2em;
+    letter-spacing: 0.07em;
 }
 .desavase a {
     position: absolute;
@@ -447,20 +451,16 @@ span {
     margin-top: 2.2em;
     display: none;
 }
-.desavase h2{
-    padding: 0.6em 0em 0.5em 2em;
-    letter-spacing: 0.07em;
-}
 .desavase p {
     padding: 0em 3.1em 0em 3.46em;
 }
 .desavase li {
     list-style-type: circle;
-    text-indent: 3.46em;
+    text-indent: 3.54em;
 }
 .desavase li p {
     margin-left:  -3.3em;
-    padding-left: 3.7em;
+    padding-left: 3.5em;
     margin-block-start: 0em;
     margin-block-end: 0em;
 }
