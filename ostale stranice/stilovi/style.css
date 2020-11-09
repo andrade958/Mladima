@@ -157,10 +157,9 @@ h1 {
     line-height: 1.5em;
     letter-spacing: -0.01rem;
 }
-span {
+strong {
     font-size: 1.3rem;
-    font-style: italic;
-    font-weight: 600;
+    font-weight: 640;
 }
 .savet {
     height: 100vh;
@@ -394,7 +393,7 @@ article header h6 {
     height: 100vh;
 }
 .desavase h2{
-    padding: 0.6em 0em 0.5em 2em;
+    padding: 0.7em 0em 0.5em 2em;
     letter-spacing: 0.07em;
 }
 .desavase a {
@@ -418,7 +417,7 @@ article header h6 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0em 4em 1.18em 4.3em;
+    margin: 0em 4em 1.29em 4.3em;
 }
 .desavase audio {
     width: 65%;
@@ -450,7 +449,7 @@ article header h6 {
     padding-left: 4.275em;
 }
 .zamena-tekst {
-    margin-top: 2.2em;
+    margin-top: 2.3em;
     display: none;
 }
 .desavase p {
@@ -472,7 +471,7 @@ article header h6 {
 footer {
     position: relative;
     top: 0.7em;
-    width: 88.2%;
+    width: 88.4%;
     margin: 0.2em auto;
     background-color: rgba(139, 0, 139, 0.974);
     color: rgba(250, 250, 250, 0.990);

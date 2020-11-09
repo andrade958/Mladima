@@ -14,8 +14,8 @@ $(document).ready(function() {
         })
     })
     $(".prikazi-tekst").click(function(){
-        $(".zamena-slika").hide(300, function() {
-            $(".zamena-tekst").fadeIn(300)
+        $(".zamena-slika").hide(400, function() {
+            $(".zamena-tekst").fadeIn(500)
         })
     })
     $(".vrati-sliku").click(function () {
