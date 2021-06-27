@@ -229,7 +229,7 @@
         background-color: rgba(139, 0, 139, 0.990);
         max-height: 0vh;
         overflow: hidden;   
-        transition: all ease-in-out 0.7s;
+        transition: all ease-in-out 0.9s;
     }
     .mobmeni ul.open {         /* sa ovim se izvrsava f-ja za prikaz padajuceg menija */
         max-height: 100vh;
@@ -243,30 +243,33 @@
         text-align: center;
         min-width: 120px;
         padding: 0 30px;
-        border-bottom: 1px dotted rgba(255, 218, 205, 0.979);
-        border-radius: 1.5emem;
+        transition: all 0.5s;
+        border-bottom: 0.1px dotted rgba(255, 218, 205, 0.979);
     }
     .mobmeni ul li a:hover {
         background-color:  rgba(255, 218, 205, 0.979);
         color: rgba(139, 0, 139, 0.990);
         font-weight: 700;
+        font-size: 1.8rem;
         cursor: pointer;
     }
     .mobmeni li button {
         background-color:  rgba(255, 218, 205, 0.979);
         color: rgba(139, 0, 139, 0.974);
-        margin-bottom: 1em;
-        padding: 0em 0.5em 0em 0.7em;
+        outline: none;
+        padding: 0.15em 0.5em 0.2em 0.7em;
         border-radius: 0em 0em 0em 3.25em;
-        font-size: 1.7rem;
-        font-weight: 500;
+        font-size: 1.8rem;
+        font-weight: 700;
+        display: flex;
+        margin: 0.15em auto;
 }
     .mobmeni li button:hover {
         border-radius: 1em;
         background-color:  rgba(139, 0, 139, 0.974);
         color: rgba(250, 250, 250, 0.990);
         cursor: pointer;
-        transform: scale(1);
+        transform: scale(1.07);
         transition: all 0.2s;
         -webkit-box-shadow: 10px 10px 9px 1px rgba(90, 29, 64, 0.75);
         -moz-box-shadow: 10px 10px 9px 1px rgba(90,29,64,0.75);
@@ -275,15 +278,15 @@
     .mobmeni .mobmeni-toggler {
         display: block;
         position: absolute;
-        top: 1.2em;
+        top: 1.7em;
         right: 2em;
-        height: 4.5em;
-        width: 4.5em;
+        height: 4em;
+        width: 4.2em;
         background-color: rgba(139, 0, 139, 0.990);
         color: white;
-        border: 2px solid white; 
+        border: 0.3em solid white; 
         outline: none;
-        padding: 0 5px;
+        padding: 0 0.5em;
         cursor: pointer;
     }
     .mobmeni .mobmeni-toggler span,
@@ -291,28 +294,26 @@
     .mobmeni .mobmeni-toggler span::after {
         display: block;
         content: '';
-        margin-right: 0.1em;
         background-color: rgba(250, 250, 250, 0.990);
-        height: 0.25em;
-        width: 2.2em;
+        height: 0.3em;
+        width: 2.5em;
         border-radius: 0.5em;
         transition: all ease-in-out 0.3s;
 }
     .mobmeni .mobmeni-toggler span::before {
-        transform: translateY(-8px);
+        transform: translateY(-0.8em);
         }
     .mobmeni .mobmeni-toggler span::after {
-        transform: translateY(5px);
+        transform: translateY(0.5em);
         }
     .mobmeni .mobmeni-toggler.open-mobmeni-toggler span {
         background-color: transparent;
-        transform: rotate(90deg);
         }
     .mobmeni .mobmeni-toggler.open-mobmeni-toggler span::before {
-        transform: translateY(0px) rotate(45deg);
+        transform: translateY(0em) rotate(45deg);
         }
     .mobmeni .mobmeni-toggler.open-mobmeni-toggler span::after {
-        transform: translateY(-3px) rotate(-45deg);
+        transform: translateY(-0.3em) rotate(-45deg);
         }
     .meni,
     .kontejner aside {

@@ -43,36 +43,33 @@ for (let i = 0; i < mobmeniLinks.length; i++) {
 }
 function mobmeniLinkClick(event) {
     smoothScroll(event)
-    if (mobmeniMenu.classList.contains("open")) { 
+    // if (mobmeniMenu.classList.contains("open")) { 
         mobmeniToggler.click();
-    }
+    // }
 }
 
 function smoothScroll(event) {
-    const targetID = event.currentTarget.getAttribute("href") === "#" ? "nav" : event.currentTarget.getAttribute("href");
+    const targetID = event.currentTarget.getAttribute("href");
     const targetPosition = document.querySelector(targetID).offsetTop;
     const startPosition = window.pageYOffset;
     const distance = targetPosition - startPosition;
-    const duration = 4000;
+    const duration = 5000;
     let start = null;
     window.requestAnimationFrame(step);
 
 function step(timestamp) {
         if (!start) start = timestamp;
         const progress = timestamp - start;
-        window.scrollTo(0, linear(progress, startPosition, distance, duration));
+        window.scrollTo(0, saUsporavanjem(progress, startPosition, distance, duration));
         if (progress < duration) window.requestAnimationFrame(step);
     }
-    function linear(t, b, c, d) {
-        return c * t / d + b;
-    };
+    function saUsporavanjem(t, b, c, d) {
+        t /= d;
+        return -c * t*(t-2) + b;
+    }
 }
 
 const meniLinks = document.querySelectorAll(".meni a")
 for (let i = 0; i < meniLinks.length; i++) {
-    meniLinks[i].addEventListener("click", meniLinkClick);
+    meniLinks[i].addEventListener("click", smoothScroll);
 }
-function meniLinkClick(event) {
-    smoothScroll(event) 
-}
-
