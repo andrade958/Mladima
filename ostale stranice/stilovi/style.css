@@ -1,551 +1,553 @@
 * {
-    /* outline: 1px dashed black; */
-    font-size: 20px;
-    box-sizing: border-box;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  /* outline: 1px dashed black; */
+  font-size: 20px;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 a {
-    text-decoration: none;
-    color: rgba(250, 250, 250, 0.990);
-    border-bottom: 1px solid transparent;
+  text-decoration: none;
+  color: rgba(250, 250, 250, 0.99);
+  border-bottom: 1px solid transparent;
 }
 a:hover {
-    background-color:  rgba(255, 218, 205, 0.979);
-    color: rgba(139, 0, 139, 0.974);
-    border-radius: 1.25em;
-    transition: all 0.2s;
+  background-color: rgba(255, 218, 205, 0.979);
+  color: rgba(139, 0, 139, 0.974);
+  border-radius: 1.25em;
+  transition: all 0.2s;
 }
 body {
-    height: 100vh;
-    margin: 0px;
-    background-color: rgba(250, 250, 250, 0.990);
-    background-image: url("../../slike/zalakunoc.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: -15em -5em ;
+  height: 100vh;
+  margin: 0px;
+  background-color: rgba(250, 250, 250, 0.99);
+  background-image: url("../../slike/zalakunoc.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: -15em -5em;
 }
 .mobmeni {
-    background-color: transparent;
-    width: 100%;
-    line-height: 6rem;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    z-index: 10;    /* ako nema z index  ne vidi se  */
+  background-color: transparent;
+  width: 100%;
+  line-height: 6rem;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 10; /* ako nema z index  ne vidi se  */
 }
 .mobmeni ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 .mobmeni ul li a {
-    display: none;
+  display: none;
 }
 .mobmeni .mobmeni-toggler {
-    display: none;
+  display: none;
 }
 .meni {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0px;
-    position: fixed;
-    top: 0px;
-    right: 0px;
-    height: 100%;
-    width: 20%;
-    padding-inline-start: 0px;
-    background-color: rgba(139, 0, 139, 0.974);
-    line-height: 3.2em;
-    text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  height: 100%;
+  width: 20%;
+  padding-inline-start: 0px;
+  background-color: rgba(139, 0, 139, 0.974);
+  line-height: 3.2em;
+  text-align: right;
 }
 .meni li {
-    padding-right: 1em;
-    list-style-type: none;
-    background-color: rgba(139, 0, 139, 0.974);
-    color: rgba(250, 250, 250, 0.990);
-    font-size: 0.9rem;
-    font-weight: 400;
-    border-color: transparent !important;
- }
+  padding-right: 1em;
+  list-style-type: none;
+  background-color: rgba(139, 0, 139, 0.974);
+  color: rgba(250, 250, 250, 0.99);
+  font-size: 0.9rem;
+  font-weight: 400;
+  border-color: transparent !important;
+}
 .meni li :hover {
-    padding: 0.12em 0.4em 0.2em 0.4em;
-    background-color:  rgba(255, 218, 205, 0.979);
-    font-weight: 500;
-    transition: all 0.2s;
+  padding: 0.12em 0.4em 0.2em 0.4em;
+  background-color: rgba(255, 218, 205, 0.979);
+  font-weight: 500;
+  transition: all 0.2s;
 }
 .meni li button {
-    background-color: rgba(250, 250, 250, 0.990);
-    color: rgba(139, 0, 139, 0.974);
-    outline: none;
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
-    padding: 0.1em 0.5em 0.15em 0.7em;
-    border-color: transparent !important;
-    border-radius: 0em 0em 0em 3.25em;
-    font-size: 1.1rem;
-    font-weight: 500;
+  background-color: rgba(250, 250, 250, 0.99);
+  color: rgba(139, 0, 139, 0.974);
+  outline: none;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  padding: 0.1em 0.5em 0.15em 0.7em;
+  border-color: transparent !important;
+  border-radius: 0em 0em 0em 3.25em;
+  font-size: 1.1rem;
+  font-weight: 500;
 }
 .meni li button:hover {
-    border-radius: 1.5em;
-    background-color:  rgba(255, 218, 205, 0.979);
-    cursor: pointer;
-    transform: scale(1.15);
-    transition: all 0.5s;
-    -webkit-box-shadow: 10px 10px 9px 1px rgba(90, 29, 64, 0.75);
-    -moz-box-shadow: 10px 10px 9px 1px rgba(90,29,64,0.75);
-    box-shadow: 10px 10px 9px 1px rgba(90,29,64,0.75);;
+  border-radius: 1.5em;
+  background-color: rgba(255, 218, 205, 0.979);
+  cursor: pointer;
+  transform: scale(1.15);
+  transition: all 0.5s;
+  -webkit-box-shadow: 10px 10px 9px 1px rgba(90, 29, 64, 0.75);
+  -moz-box-shadow: 10px 10px 9px 1px rgba(90, 29, 64, 0.75);
+  box-shadow: 10px 10px 9px 1px rgba(90, 29, 64, 0.75);
 }
 .kontejner {
-    display: grid;
-    grid-template-columns: 1fr;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.1rem;
+  font-family: "Playfair Display", serif;
+  font-size: 2.1rem;
 }
 section {
-    background-color: rgba(250, 250, 250, 0.990);
-    width: 80%;
-    margin: 0.25em 0em 0em 0em;
-    color: rgba(139, 0, 139, 0.974);
+  background-color: rgba(250, 250, 250, 0.99);
+  width: 80%;
+  margin: 0.25em 0em 0em 0em;
+  color: rgba(139, 0, 139, 0.974);
 }
 section div p {
-    font-size: 1.3rem;
-    font-style: italic;
-    text-align: justify;
-    padding-left: 2.5em;
-    padding-right: 2.5em;
+  font-size: 1.3rem;
+  font-style: italic;
+  text-align: justify;
+  padding-left: 2.5em;
+  padding-right: 2.5em;
 }
 section.margina {
-    margin-top: 0px;
+  margin-top: 0px;
 }
 .home {
-    position: relative;
-    height: 100vh;
-    background-image: url(../../slike/kuda.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: rgba(139, 0, 139, 0.974);
-    background-position: center;
+  position: relative;
+  height: 100vh;
+  background-image: url(../../slike/kuda.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgba(139, 0, 139, 0.974);
+  background-position: center;
 }
 h1 {
-    font-family: 'Playfair Display', serif;
-    display: inline-block;
-    padding-left: 1.2em;
-    padding-right: 1.2em;
-    padding-top: 1.35em;
-    font-size: 4.5rem;
-    text-shadow: 5px 3px 4px gray;
-    margin: 0em 0.8em;
+  font-family: "Playfair Display", serif;
+  display: inline-block;
+  padding-left: 1.2em;
+  padding-right: 1.2em;
+  padding-top: 1.35em;
+  font-size: 4.5rem;
+  text-shadow: 5px 3px 4px gray;
+  margin: 0em 0.8em;
 }
 .home h2 {
-    padding-left: 4.8em;
-    font-size: 1.9rem ;
+  padding-left: 4.8em;
+  font-size: 1.9rem;
 }
 .o-meni {
-    height: 100vh;
+  height: 100vh;
 }
 .o-meni h2 {
-    padding-top: 1.85em;
-    padding-left: 3.1em;
-    margin-bottom: 1.65em;
+  padding-top: 1.85em;
+  padding-left: 3.1em;
+  margin-bottom: 1.65em;
 }
 .o-meni p {
-    display: block;
-    padding: 0.22em 5.5em 0.22em 5em;
-    line-height: 1.5em;
-    letter-spacing: -0.01rem;
+  display: block;
+  padding: 0.22em 5.5em 0.22em 5em;
+  line-height: 1.5em;
+  letter-spacing: -0.01rem;
 }
 strong {
-    font-size: 1.3rem;
-    font-weight: 640;
+  font-size: 1.3rem;
+  font-weight: 640;
 }
 .savet {
-    height: 100vh;
-    background-color: rgba(139, 0, 139, 0.974);
-    color: rgba(250, 250, 250, 0.990);
-    transition: all 1s;
+  height: 100vh;
+  background-color: rgba(139, 0, 139, 0.974);
+  color: rgba(250, 250, 250, 0.99);
+  transition: all 1s;
 }
 .savet h2 {
-    margin-top: 1em;
-    margin-bottom: 0.7em;
-    padding-top: 0.14em;
-    padding-left: 1.65em;
-    letter-spacing: 0.07em;
-} 
+  margin-top: 1em;
+  margin-bottom: 0.7em;
+  padding-top: 0.14em;
+  padding-left: 1.65em;
+  letter-spacing: 0.07em;
+}
 .savet p {
-    margin-top: 0.1em;
-    margin-bottom: 0.65em;
-    padding-left: 2.7em;
-    padding-right: 2.8em;
-    word-spacing: 0.2em;
-} 
+  margin-top: 0.1em;
+  margin-bottom: 0.65em;
+  padding-left: 2.7em;
+  padding-right: 2.8em;
+  word-spacing: 0.2em;
+}
 .savet .slika {
-    text-align: center;
-    margin-top: 0.75em;
-    margin-bottom: 0.3em;
+  text-align: center;
+  margin-top: 0.75em;
+  margin-bottom: 0.3em;
 }
 .savet form div {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 .savet form button {
-    margin: 0.2em auto 0.9em;
-    padding: 0em 0.5em 0.2em;
-    display: block;
-    background-color: rgba(250, 250, 250, 0.990);
-    color: rgba(139, 0, 139, 0.974);
-    font-style: italic;
-    font-size: 1.2rem;
-    font-weight: 600;
-    letter-spacing: 0.1rem;
-    transition: all 0.5s;
-    border-radius: 0.5rem;
-    cursor: pointer;
-    outline: none;
+  margin: 0.2em auto 0.9em;
+  padding: 0em 0.5em 0.2em;
+  display: block;
+  background-color: rgba(250, 250, 250, 0.99);
+  color: rgba(139, 0, 139, 0.974);
+  font-style: italic;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  transition: all 0.5s;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  outline: none;
 }
 .savet form button:hover {
-    background-color:  rgba(255, 218, 205, 0.979);
-    color: rgba(139, 0, 139, 0.974);
-    transform: scale(1.1);
-    box-shadow: 8px 8px 7px 1px rgba(90,29,64,0.75);;
-    -webkit-box-shadow: 8px 8px 7px 1px rgba(90, 29, 64, 0.75);
-    -moz-box-shadow: 8px 8px 7px 1px rgba(90,29,64,0.75);
+  background-color: rgba(255, 218, 205, 0.979);
+  color: rgba(139, 0, 139, 0.974);
+  transform: scale(1.1);
+  box-shadow: 8px 8px 7px 1px rgba(90, 29, 64, 0.75);
+  -webkit-box-shadow: 8px 8px 7px 1px rgba(90, 29, 64, 0.75);
+  -moz-box-shadow: 8px 8px 7px 1px rgba(90, 29, 64, 0.75);
 }
 .savet input {
-    padding: 0.6em 0em 0.8em;
-    font-size: 1.3em;
-    font-weight: 600;
-    border: none;
-    background-color:  rgba(255, 218, 205, 0.979);
-    color: rgba(250, 250, 250, 0.990);
-    text-align: center;
-    font-style: italic;
-    border-radius: 0.5rem;
-    width: 14%;
-    height: 1.62rem;
-    transition: all 1.5s;
+  padding: 0.6em 0em 0.8em;
+  font-size: 1.3em;
+  font-weight: 600;
+  border: none;
+  background-color: rgba(255, 218, 205, 0.979);
+  color: rgba(250, 250, 250, 0.99);
+  text-align: center;
+  font-style: italic;
+  border-radius: 0.5rem;
+  width: 14%;
+  height: 1.62rem;
+  transition: all 1.5s;
 }
 .savet p.prst,
 .savet p.celo {
-    font-size: 1.1em;
-    font-weight: 600;
-    letter-spacing: 0.05rem;
+  font-size: 1.1em;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
 }
 .savet p.prst {
-    font-size: 1.2em;
-    letter-spacing: 0.147rem;
-    padding-left: 1.2em;
-    padding-right: 1em;
+  font-size: 1.2em;
+  letter-spacing: 0.147rem;
+  padding-left: 1.2em;
+  padding-right: 1em;
 }
 .savet p.celo {
-    border-radius: 0.5rem;
-    color: rgba(250, 250, 250, 0.990);
-    padding: 0.1em 0.5em 0em 0.5em;
-    background-color:  rgba(255, 218, 205, 0.979);
-    height: 1.6em;
-    transition: all 1.5s;
+  border-radius: 0.5rem;
+  color: rgba(250, 250, 250, 0.99);
+  padding: 0.1em 0.5em 0em 0.5em;
+  background-color: rgba(255, 218, 205, 0.979);
+  height: 1.6em;
+  transition: all 1.5s;
 }
 .put-radosti {
-    height: 100vh;
+  height: 100vh;
 }
 .put-radosti h2 {
-    margin: 0.1em 0em 0em 0.08em;
-    padding: 0.2em 0em 0.1em 0.4em;
+  margin: 0.1em 0em 0em 0.08em;
+  padding: 0.2em 0em 0.1em 0.4em;
 }
 .galerija-slike {
-    margin:0em 0.1em 0em 1em;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+  margin: 0em 0.1em 0em 1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 .galerija-slika {
-    position: relative;
+  position: relative;
 }
 .slika-pozadina {
-    display: flex;
-    margin: 0em 0.1em 0.6em 0.1em;
-    position: relative;
-    width: 97%;
-    height: 44.5vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  display: flex;
+  margin: 0em 0.1em 0.6em 0.1em;
+  position: relative;
+  width: 97%;
+  height: 44.5vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .tekst-na-slici {
-    position: absolute;
-    top: 0px;
-    font-size: 1.4rem;
-    font-weight: 600;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    text-align: center;
-    padding-left: 5em;
-    padding-right: 5em;
-    transition: 0.7s;
-    color: transparent;
-} 
-.tekst-na-slici:hover{
-    font-weight: 600;
-    color: rgba(250, 250, 250, 0.990);
+  position: absolute;
+  top: 0px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  font-style: italic;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  padding-left: 5em;
+  padding-right: 5em;
+  transition: 0.7s;
+  color: transparent;
+}
+.tekst-na-slici:hover {
+  font-weight: 600;
+  color: rgba(250, 250, 250, 0.99);
 }
 .slike-zatamljene {
-    transition: 0.5s;
-    filter: brightness(55%);
+  transition: 0.5s;
+  filter: brightness(55%);
 }
 .za-laku-noc {
-    background-color: rgba(70, 70, 70, 0.1);
-    height: 100vh;
+  background-color: rgba(70, 70, 70, 0.1);
+  height: 100vh;
 }
 .za-laku-noc h2 {
-    color: rgba(250, 250, 250, 0.990);
-    padding-left: 2.5em;
-    padding-top: 1em;
+  color: rgba(250, 250, 250, 0.99);
+  padding-left: 2.5em;
+  padding-top: 1em;
 }
 .za-laku-noc p {
-    color: rgba(250, 250, 250, 0.990);
-    padding-left: 4.1em;
-    padding-right: 4.1em;
+  color: rgba(250, 250, 250, 0.99);
+  padding-left: 4.1em;
+  padding-right: 4.1em;
 }
 .razmak {
-    height: 28em;
+  height: 28em;
 }
 .za-laku-noc audio {
-    width:65%;
-    padding-left: 5.4em;
-    border: 0;
+  width: 65%;
+  padding-left: 5.4em;
+  border: 0;
 }
 .neko-nauci {
-    height: 100vh;
+  height: 100vh;
 }
 .neko-nauci h2 {
-    padding-top: 0.26em;
-    padding-left: 1.78em;
+  padding-top: 0.26em;
+  padding-left: 1.78em;
 }
 .neko-nauci p {
-    font-weight: 400;
-    padding-left: 2.99em;
-    padding-right: 2.8em;
+  font-weight: 400;
+  padding-left: 2.99em;
+  padding-right: 2.8em;
 }
 .neko-nauci a {
-    margin-top: 0.7em;
-    margin-right: 3.7em;
-    float: right; 
-    width: 1.8em;
-    height: 1.8em;
-    /* padding-left: 0.2em; */
-    line-height: 1.6em;
-    color: rgba(250, 250, 250, 0.990);
-    font-size: 0.9rem;
-    font-weight: 700;
-    border-radius: 50%;
-    background-color: rgba(139, 0, 139, 0.974);
-    transition: all 0.2s;
+  margin-top: 0.7em;
+  margin-right: 3.7em;
+  float: right;
+  width: 1.8em;
+  height: 1.8em;
+  /* padding-left: 0.2em; */
+  line-height: 1.6em;
+  color: rgba(250, 250, 250, 0.99);
+  font-size: 0.9rem;
+  font-weight: 700;
+  border-radius: 50%;
+  background-color: rgba(139, 0, 139, 0.974);
+  transition: all 0.2s;
 }
 .neko-nauci a:hover {
-    background-color:  rgba(255, 218, 205, 0.979);
-    color: rgba(139, 0, 139, 0.974);
+  background-color: rgba(255, 218, 205, 0.979);
+  color: rgba(139, 0, 139, 0.974);
 }
 article {
-    position: relative;
-    margin-top: 2em;
-    left: 5.2%;
-    top: 0px;
-    border: 2px solid darkmagenta;
-    padding-left: 1.4%;
-    overflow: scroll;
-    width: 89.7%;
-    height: 57vh;
-    background-color: rgba(139, 0, 139, 0.974);
-    color: rgba(250, 250, 250, 0.990);
-    text-align: left;
-    line-height: 0.17em;
+  position: relative;
+  margin-top: 2em;
+  left: 5.2%;
+  top: 0px;
+  border: 2px solid darkmagenta;
+  padding-left: 1.4%;
+  overflow: scroll;
+  width: 89.7%;
+  height: 57vh;
+  background-color: rgba(139, 0, 139, 0.974);
+  color: rgba(250, 250, 250, 0.99);
+  text-align: left;
+  line-height: 0.17em;
 }
 article h4 {
-    font-family: 'Playfair Display', serif;
-    margin-top: 2.5em;
-    margin-bottom: 2.2em;
-    text-align: center;
-    font-size: 1.4rem;
+  font-family: "Playfair Display", serif;
+  margin-top: 2.5em;
+  margin-bottom: 2.2em;
+  text-align: center;
+  font-size: 1.4rem;
 }
 .neko-nauci article p {
-    margin-top: 1em;
-    text-indent: 27%;
-    font-size: 1.2rem;
-    font-weight: 400;
-    font-style: italic;
+  margin-top: 1em;
+  text-indent: 27%;
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-style: italic;
 }
 article header h5 {
-    margin: 1.6em 0em 0em 1em;
-    font-size: 1.1rem;
-    font-style: italic;
+  margin: 1.6em 0em 0em 1em;
+  font-size: 1.1rem;
+  font-style: italic;
 }
 article header h6 {
-    margin: 0em 0em 0em 1.4em;
-    font-size: 0.8rem;
-    font-style: italic;
+  margin: 0em 0em 0em 1.4em;
+  font-size: 0.8rem;
+  font-style: italic;
 }
 .desavase {
-    position: relative;
-    height: 100vh;
+  position: relative;
+  height: 100vh;
 }
-.desavase h2{
-    padding: 0.7em 0em 0.5em 2em;
-    letter-spacing: 0.07em;
+.desavase h2 {
+  padding: 0.7em 0em 0.5em 2em;
+  letter-spacing: 0.07em;
 }
 .desavase a {
-    position: absolute;
-    top: 2.25em;
-    right: 2.95em;
-    width: 1.5em;
-    height: 1.5em;
-    color: rgba(250, 250, 250, 0.990);
-    font-size: 1.4rem;
-    border-radius: 50%;
-    background-color: rgba(139, 0, 139, 0.974);
-    line-height: 1.25em;
-    transition: all 0.2s;
+  position: absolute;
+  top: 2.25em;
+  right: 2.95em;
+  width: 1.5em;
+  height: 1.5em;
+  color: rgba(250, 250, 250, 0.99);
+  font-size: 1.4rem;
+  border-radius: 50%;
+  background-color: rgba(139, 0, 139, 0.974);
+  line-height: 1.25em;
+  transition: all 0.2s;
 }
 .desavase a:hover {
-    background-color:  rgba(255, 218, 205, 0.979);
-    color: rgba(139, 0, 139, 0.974);
+  background-color: rgba(255, 218, 205, 0.979);
+  color: rgba(139, 0, 139, 0.974);
 }
 .snimak {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0em 4em 1.29em 4.3em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0em 4em 1.29em 4.3em;
 }
 .desavase audio {
-    width: 65%;
+  width: 65%;
 }
 .prikazi-tekst,
 .vrati-sliku {
-    padding: 0em 0.5em 0.17em;
-    background-color: rgba(139, 0, 139, 0.932);
-    color: rgba(255, 255, 255, 0.990);
-    max-width: 15em;
-    font-size: 1.1em;
-    font-weight: 400;
-    font-stretch: ultra-expanded;
-    border-radius: 0.5em;
-    height: 1.8em;
-    cursor: pointer;
-    letter-spacing: 0.05rem;
+  padding: 0em 0.5em 0.17em;
+  background-color: rgba(139, 0, 139, 0.932);
+  color: rgba(255, 255, 255, 0.99);
+  max-width: 15em;
+  font-size: 1.1em;
+  font-weight: 400;
+  font-stretch: ultra-expanded;
+  border-radius: 0.5em;
+  height: 1.8em;
+  cursor: pointer;
+  letter-spacing: 0.05rem;
 }
-.prikazi-tekst:hover, 
+.prikazi-tekst:hover,
 .vrati-sliku:hover {
-    background-color:  rgba(255, 218, 205, 0.979);
-    color: rgba(139, 0, 139, 0.974);
+  background-color: rgba(255, 218, 205, 0.979);
+  color: rgba(139, 0, 139, 0.974);
 }
 .zamena-slika img {
-    display: flex;
-    width: 94.64%;
-    height: 65.5vh;
-    object-fit: cover;
-    padding-left: 4.275em;
+  display: flex;
+  width: 94.64%;
+  height: 65.5vh;
+  object-fit: cover;
+  padding-left: 4.275em;
 }
 .zamena-tekst {
-    margin-top: 2.3em;
-    display: none;
+  margin-top: 2.3em;
+  display: none;
 }
 .desavase p {
-    padding: 0em 3.1em 0em 3.46em;
+  padding: 0em 3.1em 0em 3.46em;
 }
 .desavase li {
-    list-style-type: circle;
-    /* text-indent: 3.46em; */
-    margin-left: 3.46em;
+  list-style-type: circle;
+  /* text-indent: 3.46em; */
+  margin-left: 3.46em;
 }
 .desavase li p {
-    margin-left:  -3.3em;
-    padding-left: 3.5em;
-    margin-block-start: 0em;
-    margin-block-end: 0em;
+  margin-left: -3.3em;
+  padding-left: 3.5em;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
 }
 .prazan-prostor {
-    margin-bottom: 1.5em;
+  margin-bottom: 1.5em;
 }
 footer {
-    position: relative;
-    top: 0.7em;
-    width: 88.4%;
-    margin: 0.2em auto;
-    background-color: rgba(139, 0, 139, 0.974);
-    color: rgba(250, 250, 250, 0.990);
+  position: relative;
+  top: 0.7em;
+  width: 88.4%;
+  margin: 0.2em auto;
+  background-color: rgba(139, 0, 139, 0.974);
+  color: rgba(250, 250, 250, 0.99);
 }
 .desavase footer p {
-    font-size: 0.77rem;
-    font-style: italic;
-    font-weight: 600;
-    padding: 0.1em 1em 0.3em;
+  font-size: 0.77rem;
+  font-style: italic;
+  font-weight: 600;
+  padding: 0.1em 1em 0.3em;
 }
 aside.komentar {
-    position: fixed;
-    top: 0px;
-    right: 0px;
-    height: 100%;
-    width: 20%;
-    padding-inline-start: 0px;
-    background-color: rgba(139, 0, 139, 0.974);
-    padding: 0em 3.5em;
-    line-height: 1em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 1.1rem;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  height: 100%;
+  width: 20%;
+  padding-inline-start: 0px;
+  background-color: rgba(139, 0, 139, 0.974);
+  padding: 0em 3.5em;
+  line-height: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.1rem;
 }
 label {
-    color: rgba(250, 250, 250, 0.990);
-    font-size: 1em;
-    font-weight: 600;
+  color: rgba(250, 250, 250, 0.99);
+  font-size: 1em;
+  font-weight: 600;
 }
 .komentar input,
 textarea {
-    display: block;
-    padding: 0.3em 0.5em 0.5em;
-    background-color: rgba(250, 250, 250, 0.990);
-    font-size: 1.1rem;
-    border-radius: 0.5em;
-    border: 1px solid rgb(180,180,180);
-    transition: all 0.5s;
+  display: block;
+  padding: 0.3em 0.5em 0.5em;
+  background-color: rgba(250, 250, 250, 0.99);
+  font-size: 1.1rem;
+  border-radius: 0.5em;
+  border: 1px solid rgb(180, 180, 180);
+  transition: all 0.5s;
 }
 .komentar input {
-    margin-top: 0.5em;
-    margin-bottom: 1em;
-    width: 100%;
-    height: 1.8rem;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  width: 100%;
+  height: 1.8rem;
 }
 .komentar textarea {
-    max-height: 14em;
-    min-width: 95%;
-    padding: 0.25em 0.25em 0.25em 0.5em;
-    overflow: hidden;
-    overflow: scroll;
-    text-align: center;
-    vertical-align: middle;
+  max-height: 14em;
+  min-width: 95%;
+  padding: 0.25em 0.25em 0.25em 0.5em;
+  overflow: hidden;
+  overflow: scroll;
+  text-align: center;
+  vertical-align: middle;
 }
 .komentar form button {
-    margin-top: 1em;
-    width: 100%;
-    height: 2rem;
-    border-radius: 0.5em;
-    border: 1px solid rgb(180,180,180);
-    background-color: rgba(250, 250, 250, 0.990);
-    color: rgba(139, 0, 139, 0.974); 
-    letter-spacing: 0.3em;
-    font-size: 1.2em;
-    font-weight: 600;
-    transition: color 0.3s;
-    cursor: pointer;
+  margin-top: 1em;
+  width: 100%;
+  height: 2rem;
+  border-radius: 0.5em;
+  border: 1px solid rgb(180, 180, 180);
+  background-color: rgba(250, 250, 250, 0.99);
+  color: rgba(139, 0, 139, 0.974);
+  letter-spacing: 0.3em;
+  font-size: 1.2em;
+  font-weight: 600;
+  transition: color 0.3s;
+  cursor: pointer;
 }
 .komentar form button:hover {
-    background-color:  rgba(212, 206, 204, 0.747);
-    color: rgba(250, 250, 250, 0.990);
+  background-color: rgba(212, 206, 204, 0.747);
+  color: rgba(250, 250, 250, 0.99);
 }
