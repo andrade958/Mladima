@@ -1,471 +1,472 @@
 @media only screen and (max-width: 9999px) {
-    * {
-        font-size: 97px;
-    }
-    section {
-        overflow: scroll;
-    }
+  * {
+    font-size: 97px;
+  }
+  section {
+    overflow: scroll;
+  }
 }
 @media only screen and (max-width: 8200px) {
-    * {
-        font-size: 84px;
-    }
+  * {
+    font-size: 84px;
+  }
 }
 @media only screen and (max-width: 7000px) {
-    * {
-        font-size: 75px;
-    }
+  * {
+    font-size: 75px;
+  }
 }
 @media only screen and (max-width: 6000px) {
-    * {
-        font-size: 60px;
-    }
+  * {
+    font-size: 60px;
+  }
 }
 @media only screen and (max-width: 5000px) {
-    * {
-        font-size: 54px;
-    }
+  * {
+    font-size: 54px;
+  }
 }
 @media only screen and (max-width: 4000px) {
-    * {
-        font-size: 42px;
-    }
+  * {
+    font-size: 42px;
+  }
 }
 @media only screen and (max-width: 3200px) {
-    * {
-        font-size: 34px;
-    }
+  * {
+    font-size: 34px;
+  }
 }
 @media only screen and (max-width: 2700px) {
-    * {
-        font-size: 27px;
-    }
+  * {
+    font-size: 27px;
+  }
 }
 @media only screen and (max-width: 2300px) {
-    * {
-        font-size: 23px;
-    }
+  * {
+    font-size: 23px;
+  }
 }
 @media only screen and (max-width: 1920px) {
-    * {
-        font-size: 20px;
-    }
+  * {
+    font-size: 20px;
+  }
 }
 @media only screen and (max-width: 1850px) {
-    * {
-        font-size: 19px;
-    }
-    body {
-        background-position: -14em -5em ;
-        background-size: 104%;
-    }
+  * {
+    font-size: 19px;
+  }
+  body {
+    background-position: -14em -5em;
+    background-size: 104%;
+  }
 }
 @media only screen and (max-width: 1680px) {
-    * {
-        font-size: 18px;
-    }
-    body {
-        background-position: -14em -5em ;
-        background-size: 107%;
-    }
+  * {
+    font-size: 18px;
+  }
+  body {
+    background-position: -14em -5em;
+    background-size: 107%;
+  }
 }
 @media only screen and (max-width: 1550px) {
-    * {
-        font-size: 17px;
-    }
-    body {
-        background-position: -12em -5em ;
-        background-size: 110%;
-    }
+  * {
+    font-size: 17px;
+  }
+  body {
+    background-position: -12em -5em;
+    background-size: 110%;
+  }
 }
 @media only screen and (max-width: 1369px) {
-    * {
-        font-size: 16px;
-    }
-    body {
-        background-position: -11em -5em ;
-        background-size: 115%;
-    }
+  * {
+    font-size: 16px;
+  }
+  body {
+    background-position: -11em -5em;
+    background-size: 115%;
+  }
 }
 @media only screen and (max-width: 1260px) {
-    *  {
-        font-size: 14.5px;
-    }
-    body {
-        background-position: -10em -5em ;
-        background-size: 120%;
-    }
+  * {
+    font-size: 14.5px;
+  }
+  body {
+    background-position: -10em -5em;
+    background-size: 120%;
+  }
 }
 @media only screen and (max-width: 1110px) {
-    *  {
-        font-size: 13.9px;
-    }
-    body {
-        background-position: -14em -5em ;
-        background-size: 125%;
-    }
-    .razmak {
-        height: 26.7em;
-    }
+  * {
+    font-size: 13.9px;
+  }
+  body {
+    background-position: -14em -5em;
+    background-size: 125%;
+  }
+  .razmak {
+    height: 26.7em;
+  }
 }
 @media only screen and (max-width: 1068px) {
-    *  {
-        font-size: 13.6px;
-    }
-    body {
-        background-position: -16em -5em ;
-        background-size: 130%;
-    }
-    .razmak {
-        height: 27em;
-    }
+  * {
+    font-size: 13.6px;
+  }
+  body {
+    background-position: -16em -5em;
+    background-size: 130%;
+  }
+  .razmak {
+    height: 27em;
+  }
 }
 @media only screen and (max-width: 1050px) {
-    * {
-        font-size: 13.3px;
-    }
-    article {
-        line-height: 0.9em;
-    }
+  * {
+    font-size: 13.3px;
+  }
+  article {
+    line-height: 0.9em;
+  }
 }
 @media only screen and (max-width: 1030px) {
-    * {
-        font-size: 13px;
-    }
+  * {
+    font-size: 13px;
+  }
 }
 @media only screen and (max-width: 1010px) {
-    * {
-        font-size: 12.7px;
-    }
-    body {
-        background-position: -20em -7em ;
-        background-size: 140%;
-    }
-    .razmak {
-        height: 28em;
-    }
+  * {
+    font-size: 12.7px;
+  }
+  body {
+    background-position: -20em -7em;
+    background-size: 140%;
+  }
+  .razmak {
+    height: 28em;
+  }
 }
-@media (max-width: 990px)  {
-    * {
-        font-size: 12.5px;
-    }
-    body {
-        background-position: -25em -9em ;
-        background-size: 145%;
-    }
-    .razmak {
-        height: 30em;
-    }
-    .meni li :hover {
-        background-color: darkmagenta;
-        color:  rgba(255, 218, 205, 0.979);
-        transition: color 0.3s;
-    }
-    .meni li button:hover {
+@media (max-width: 990px) {
+  * {
+    font-size: 12.5px;
+  }
+  body {
+    background-position: -25em -9em;
+    background-size: 145%;
+  }
+  .razmak {
+    height: 30em;
+  }
+  .meni li :hover {
     background-color: darkmagenta;
-    }
+    color: rgba(255, 218, 205, 0.979);
+    transition: color 0.3s;
+  }
+  .meni li button:hover {
+    background-color: darkmagenta;
+  }
 }
-@media  (max-width: 960px) {
-    * {
-        font-size: 10px;
-    }
-    body {
-        background-position: -30em -10em ;
-        background-size: 150%;
-    }
-    .razmak {
-        height: 38em;
-    }
+@media (max-width: 960px) {
+  * {
+    font-size: 10px;
+  }
+  body {
+    background-position: -30em -10em;
+    background-size: 150%;
+  }
+  .razmak {
+    height: 38em;
+  }
 }
-@media  (max-width: 903px) {
-    body {
-        background-position: -35em -14em ;
-        background-size: 160%;
-    }
-    .razmak {
-        height: 38em;
-    }
+@media (max-width: 903px) {
+  body {
+    background-position: -35em -14em;
+    background-size: 160%;
+  }
+  .razmak {
+    height: 38em;
+  }
 }
-@media  (max-width: 840px) {
-    body {
-        background-position: -65em -20em ;
-        background-size: 190%;
-    }
-    .razmak {
-            height: 38em;
-    }
+@media (max-width: 840px) {
+  body {
+    background-position: -65em -20em;
+    background-size: 190%;
+  }
+  .razmak {
+    height: 38em;
+  }
 }
-@media  (max-width: 800px) {
-    * {
-        font-size: 9px;
-    }
-    body {
-        background-position: -75em -25em ;
-        background-size: 200%;
-    }
-    .razmak {
-            height: 40em;
-    }
-} 
-@media  (max-width: 767px)   {
-    * {
-        font-size: 10px;
-    }
-    body {
-        background-position: -60em -18em ;
-        background-size: 230%;
-    }
-    .razmak {
-        height: 40em;
-    }
-    section {
-        width: 100%;
-    }
-    .mobmeni ul {
-        margin-top: 0px;
-        list-style-type: none;
-        width: 100%;
-        padding: 0;  
-        background-color: rgba(139, 0, 139, 0.990);
-        max-height: 0vh;
-        overflow: hidden;   
-        transition: all ease-in-out 0.9s;
-    }
-    .mobmeni ul.open {         /* sa ovim se izvrsava f-ja za prikaz padajuceg menija */
-        max-height: 100vh;
-    }
-    .mobmeni ul li a {
-        text-decoration: none;
-        font-size: 1.7rem;
-        font-weight: 500;
-        color: white;    
-        display: block;
-        text-align: center;
-        min-width: 120px;
-        padding: 0 30px;
-        transition: all 0.5s;
-        border-bottom: 0.1px dotted rgba(255, 218, 205, 0.979);
-    }
-    .mobmeni ul li a:hover {
-        background-color:  rgba(255, 218, 205, 0.979);
-        color: rgba(139, 0, 139, 0.990);
-        font-weight: 700;
-        font-size: 1.8rem;
-        cursor: pointer;
-    }
-    .mobmeni li button {
-        background-color:  rgba(255, 218, 205, 0.979);
-        color: rgba(139, 0, 139, 0.974);
-        outline: none;
-        padding: 0.15em 0.5em 0.2em 0.7em;
-        border-radius: 0em 0em 0em 3.25em;
-        font-size: 1.8rem;
-        font-weight: 700;
-        display: flex;
-        margin: 0.15em auto;
+@media (max-width: 800px) {
+  * {
+    font-size: 9px;
+  }
+  body {
+    background-position: -75em -25em;
+    background-size: 200%;
+  }
+  .razmak {
+    height: 40em;
+  }
 }
-    .mobmeni li button:hover {
-        border-radius: 1em;
-        background-color:  rgba(139, 0, 139, 0.974);
-        color: rgba(250, 250, 250, 0.990);
-        cursor: pointer;
-        transform: scale(1.07);
-        transition: all 0.2s;
-        -webkit-box-shadow: 10px 10px 9px 1px rgba(90, 29, 64, 0.75);
-        -moz-box-shadow: 10px 10px 9px 1px rgba(90,29,64,0.75);
-        box-shadow: 10px 10px 9px 1px rgba(90,29,64,0.75);;
-}
-    .mobmeni .mobmeni-toggler {
-        display: block;
-        position: absolute;
-        top: 1.7em;
-        right: 2em;
-        height: 4em;
-        width: 4.2em;
-        background-color: rgba(139, 0, 139, 0.990);
-        color: white;
-        border: 0.3em solid white; 
-        outline: none;
-        padding: 0 0.5em;
-        cursor: pointer;
-    }
-    .mobmeni .mobmeni-toggler span,
-    .mobmeni .mobmeni-toggler span::before,
-    .mobmeni .mobmeni-toggler span::after {
-        display: block;
-        content: '';
-        background-color: rgba(250, 250, 250, 0.990);
-        height: 0.3em;
-        width: 2.5em;
-        border-radius: 0.5em;
-        transition: all ease-in-out 0.3s;
-}
-    .mobmeni .mobmeni-toggler span::before {
-        transform: translateY(-0.8em);
-        }
-    .mobmeni .mobmeni-toggler span::after {
-        transform: translateY(0.5em);
-        }
-    .mobmeni .mobmeni-toggler.open-mobmeni-toggler span {
-        background-color: transparent;
-        }
-    .mobmeni .mobmeni-toggler.open-mobmeni-toggler span::before {
-        transform: translateY(0em) rotate(45deg);
-        }
-    .mobmeni .mobmeni-toggler.open-mobmeni-toggler span::after {
-        transform: translateY(-0.3em) rotate(-45deg);
-        }
-    .meni,
-    .kontejner aside {
-        display: none;
-    }
-    article {
-        line-height: 0.7em;
-    }
-    .galerija-slike {
-        grid-template-columns: 1fr 1fr;
-    }
-    .snimak {
-        flex-direction: column;
-    } 
-    .prikazi-tekst,
-    .vrati-sliku {
-        margin: 0.3em auto;
-        max-width: 20em;
-    }
+@media (max-width: 767px) {
+  * {
+    font-size: 10px;
+  }
+  body {
+    background-position: -60em -18em;
+    background-size: 230%;
+  }
+  .razmak {
+    height: 40em;
+  }
+  section {
+    width: 100%;
+  }
+  .mobmeni ul {
+    margin-top: 0px;
+    list-style-type: none;
+    width: 100%;
+    padding: 0;
+    background-color: rgba(139, 0, 139, 0.99);
+    max-height: 0vh;
+    overflow: hidden;
+    transition: all ease-in-out 0.9s;
+  }
+  .mobmeni ul.open {
+    /* sa ovim se izvrsava f-ja za prikaz padajuceg menija */
+    max-height: 100vh;
+  }
+  .mobmeni ul li a {
+    text-decoration: none;
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: white;
+    display: block;
+    text-align: center;
+    min-width: 120px;
+    padding: 0 30px;
+    transition: all 0.5s;
+    border-bottom: 0.1px dotted rgba(255, 218, 205, 0.979);
+  }
+  .mobmeni ul li a:hover {
+    background-color: rgba(255, 218, 205, 0.979);
+    color: rgba(139, 0, 139, 0.99);
+    font-weight: 700;
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+  .mobmeni li button {
+    background-color: rgba(255, 218, 205, 0.979);
+    color: rgba(139, 0, 139, 0.974);
+    outline: none;
+    padding: 0.15em 0.5em 0.2em 0.7em;
+    border-radius: 0em 0em 0em 3.25em;
+    font-size: 1.8rem;
+    font-weight: 700;
+    display: flex;
+    margin: 0.15em auto;
+  }
+  .mobmeni li button:hover {
+    border-radius: 1em;
+    background-color: rgba(139, 0, 139, 0.974);
+    color: rgba(250, 250, 250, 0.99);
+    cursor: pointer;
+    transform: scale(1.07);
+    transition: all 0.2s;
+    -webkit-box-shadow: 10px 10px 9px 1px rgba(90, 29, 64, 0.75);
+    -moz-box-shadow: 10px 10px 9px 1px rgba(90, 29, 64, 0.75);
+    box-shadow: 10px 10px 9px 1px rgba(90, 29, 64, 0.75);
+  }
+  .mobmeni .mobmeni-toggler {
+    display: block;
+    position: absolute;
+    top: 1.7em;
+    right: 2em;
+    height: 4em;
+    width: 4.2em;
+    background-color: rgba(139, 0, 139, 0.99);
+    color: white;
+    border: 0.3em solid white;
+    outline: none;
+    padding: 0 0.5em;
+    cursor: pointer;
+  }
+  .mobmeni .mobmeni-toggler span,
+  .mobmeni .mobmeni-toggler span::before,
+  .mobmeni .mobmeni-toggler span::after {
+    display: block;
+    content: "";
+    background-color: rgba(250, 250, 250, 0.99);
+    height: 0.3em;
+    width: 2.5em;
+    border-radius: 0.5em;
+    transition: all ease-in-out 0.3s;
+  }
+  .mobmeni .mobmeni-toggler span::before {
+    transform: translateY(-0.8em);
+  }
+  .mobmeni .mobmeni-toggler span::after {
+    transform: translateY(0.5em);
+  }
+  .mobmeni .mobmeni-toggler.open-mobmeni-toggler span {
+    background-color: transparent;
+  }
+  .mobmeni .mobmeni-toggler.open-mobmeni-toggler span::before {
+    transform: translateY(0em) rotate(45deg);
+  }
+  .mobmeni .mobmeni-toggler.open-mobmeni-toggler span::after {
+    transform: translateY(-0.3em) rotate(-45deg);
+  }
+  .meni,
+  .kontejner aside {
+    display: none;
+  }
+  article {
+    line-height: 0.7em;
+  }
+  .galerija-slike {
+    grid-template-columns: 1fr 1fr;
+  }
+  .snimak {
+    flex-direction: column;
+  }
+  .prikazi-tekst,
+  .vrati-sliku {
+    margin: 0.3em auto;
+    max-width: 20em;
+  }
 }
 @media (max-width: 650px) {
-    body {
-         background-position: -55em -10em ;
-         background-size: 225%;
-    }
-    .o-meni p {
-        line-height: 1.65em;
-    }
-    .razmak {
-        height: 40em;
-    }
-    article {
-        width: 88.8%;
-        left: 5.7%;
-        line-height: 1em;
-    }
-    .zamena-slika img {
+  body {
+    background-position: -55em -10em;
+    background-size: 225%;
+  }
+  .o-meni p {
+    line-height: 1.65em;
+  }
+  .razmak {
+    height: 40em;
+  }
+  article {
+    width: 88.8%;
+    left: 5.7%;
+    line-height: 1em;
+  }
+  .zamena-slika img {
     width: 93.64%;
-    }
+  }
 }
 @media (max-width: 570px) {
-    body {
-        background-size: 250%;
-    }
-    .o-meni p {
-        line-height: 1.55em;
-    }
-    .razmak {
-        height: 37em;
-    }
-    article {
-        width: 87.6%;
-        left: 6.2%;
-    }
-    .zamena-slika img {
-        width: 93%;
-    }
+  body {
+    background-size: 250%;
+  }
+  .o-meni p {
+    line-height: 1.55em;
+  }
+  .razmak {
+    height: 37em;
+  }
+  article {
+    width: 87.6%;
+    left: 6.2%;
+  }
+  .zamena-slika img {
+    width: 93%;
+  }
 }
 @media (max-width: 490px) {
-    body {
-        background-position: -40em -5em;
-         background-size: 270%;
-            }
-    .o-meni p {
-            line-height: 1.2em;
-    }
-    .tekst na slici {
-        font-size: 1.2em;
-    }
-    .razmak {
-        height: 34em;
-    }
-    article {
-        width: 85%;
-        left: 7.5%;
-        line-height: 1.2em;
-    }
-    .zamena-slika img {
-        width: 91.6%;
-    }
+  body {
+    background-position: -40em -5em;
+    background-size: 270%;
+  }
+  .o-meni p {
+    line-height: 1.2em;
+  }
+  .tekst na slici {
+    font-size: 1.2em;
+  }
+  .razmak {
+    height: 34em;
+  }
+  article {
+    width: 85%;
+    left: 7.5%;
+    line-height: 1.2em;
+  }
+  .zamena-slika img {
+    width: 91.6%;
+  }
 }
 @media (max-width: 405px) {
-    * {
-        font-size: 9.1px;
-    }
-    body {
-        background-position: -50em -6em;
-         background-size: 310%;
-    }
-    .o-meni p {
-        line-height: 1.1em;
-    }
-    .tekst na slici {
-        font-size: 0.8em;
-        font-weight: 400;
-    }
-    .tekst-na-slici:hover{
-        font-weight: 400;
-    }
+  * {
+    font-size: 9.1px;
+  }
+  body {
+    background-position: -50em -6em;
+    background-size: 310%;
+  }
+  .o-meni p {
+    line-height: 1.1em;
+  }
+  .tekst na slici {
+    font-size: 0.8em;
+    font-weight: 400;
+  }
+  .tekst-na-slici:hover {
+    font-weight: 400;
+  }
 }
 @media (max-width: 380px) {
-    body {
-        background-position: -55em -7em;
-         background-size: 333%;
-            }
-    .razmak {
-        height: 34.5em;
-    }
-    h1 {
-        padding-left: 1em;
-        padding-right: 1em;
-        padding-top: 1.5em;
-        text-shadow: 4px 2px 3px gray;
-    }
-    .home h2 {
-        padding-left: 4.4em;
-    }
-    .savet p.prst {
-        padding-left: 0.6em;
-        padding-right: 0.4em;
-    }
-    .zamena-slika img {
-        width: 90.6%;
-    }
+  body {
+    background-position: -55em -7em;
+    background-size: 333%;
+  }
+  .razmak {
+    height: 34.5em;
+  }
+  h1 {
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1.5em;
+    text-shadow: 4px 2px 3px gray;
+  }
+  .home h2 {
+    padding-left: 4.4em;
+  }
+  .savet p.prst {
+    padding-left: 0.6em;
+    padding-right: 0.4em;
+  }
+  .zamena-slika img {
+    width: 90.6%;
+  }
 }
 @media (max-width: 360px) {
-    h1 {
-        padding-left: 0.5em;
-        padding-right: 0.5em;
-        padding-top: 0.9em;
-    }
-    .home h2 {
-        padding-left: 3.2em;
-    }
+  h1 {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    padding-top: 0.9em;
+  }
+  .home h2 {
+    padding-left: 3.2em;
+  }
 
-    .o-meni p {
-        line-height: 1em;
-    }
-    .tekst-na-slici {
-        flex-direction: row;
-        font-weight: 300;
-        justify-content: left;
-        padding-left: 4em;
-    } 
-    .tekst-na-slici:hover{
-        font-weight: 300;
-    }
-    article {
-        width: 81.6%;
-        left: 9.3%;
-    }
-    .zamena-slika img {
-        width: 89.64%;
-    }
+  .o-meni p {
+    line-height: 1em;
+  }
+  .tekst-na-slici {
+    flex-direction: row;
+    font-weight: 300;
+    justify-content: left;
+    padding-left: 4em;
+  }
+  .tekst-na-slici:hover {
+    font-weight: 300;
+  }
+  article {
+    width: 81.6%;
+    left: 9.3%;
+  }
+  .zamena-slika img {
+    width: 89.64%;
+  }
 }
